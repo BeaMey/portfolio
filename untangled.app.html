@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Beatriz Meythaler, Legal App UX Design</title>
+  <meta name="author" content="Legal App for Entrepreneurs | UX Design | Beatriz Meythaler" />
+  <meta name="description"
+    content="Mobile App development based on user research, competitive analysis, wireframing, prototyping, and usability testing |  See Case Study." />
+  <link href="img/favicons/favicon-32x32.png" rel="shortcut icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="img/favicons/site.webmanifest" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="css-box-shadow">
+    <div class="container" id="header">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/logo_bm_ux.svg"
+            alt="Beatriz Meythaler Personal Brand Logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="work.html">My Work</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#header" class="up">&#9650;</a></button>
+  </header>
+
+  <main>
+    <div class="container intro">
+      <a href="index.html" class="banner-link-block w-inline-block"><img
+          src="https://assets.website-files.com/6218605145a2e6339ee94d62/62186e5925f2d17c016ef067_banner-title-arrow.svg"
+          loading="lazy" alt="Banner Link Arrow" />
+        <p>Home</p>
+      </a>
+      <h1>Untangled Legal App</h1>
+      <span>All-in-One Solution</span>
+      <picture class="centered-picture">
+        <source srcset="img/untangled/@1mockup-untangled.png" class="centered">
+        <img src="img/untangled/" alt="Untangled Project" class="project-image">
+      </picture>
+    </div>
+
+    <div class="container">
+
+      <div class="aboutapp">
+        <div class="content-wrapperintro">
+          <div class="image-contentintro">
+            <picture>
+              <source srcset="img/untangled/@1logo.png" class="centered">
+              <img src="img/img/untangled/@2logo.png/" alt="Untangled Project" class="project-logo">
+            </picture>
+          </div>
+          <div class="text-content">
+            <p>Untangled App is a web application designed for Ecuadorian entrepreneurs, providing 4 affordable vital
+              functions:</p>
+            <p>➡️<span class="features">Expert Legal Advice</span>: Connect with experienced lawyers for reliable
+              counsel.
+            </p>
+            <p>➡️<span class="features">Legal Documents Creator</span>: Easily create compliant documents.</p>
+            <p>➡️<span class="features">Centralized Hub</span>: Manage all interactions and documents in one place.</p>
+            <p>➡️<span class="features">Regulatory Insights</span>: Stay updated on business regulations and changes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>The Problem</h2>
+      <div class="introduction-wrap">
+        <div class="theproblem">
+          <p>👩🏻‍⚖️Entrepreneurs often struggle to find <span class="features">reliable and affordable legal
+              services</span> to navigate the legal
+            framework and protect their interests and businesses.</p>
+          <p><span class="features">Goal of the Project</span>:📱The Untangle App directly addresses this challenge by
+            offering <span class="features">cost-effective
+              access to trustworthy and convenient legal advice</span>, enabling entrepreneurs to resolve common legal
+            queries efficiently while saving valuable time and resources..
+          </p>
+          <p>💡<span class="features">Design thinking</span> was employed to tackle this challenge, comprising the
+            following 6 phases (🖰 click to see):</p>
+          <div class="case-category-wrap">
+            <a class="active" href="#empathize">Empathize</a>
+            <a href="#define">Define</a>
+            <a href="#ideate">Ideate</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#test">Test</a>
+            <a href="#iteration">Iteration</a>
+          </div>
+        </div>
+        <div class="projectdetail">
+          <div>
+            <span class="features">My Role:</span>
+            <p>♟️Sole UX Designer, in collaboration with legal experts and
+              entrepreneurs.
+              Part of UX certification, Berlin.</p>
+            <span class="features">Duration:</span>
+            <p>⏱️January to July 2023.</p>
+            <span class="features">Tools:</span>
+            <p>⚒️Figma, Miro, Trello, Canva, Optimal Workshop, Helio and Survey Monkey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="empathize"></section>
+    <div class="container">
+      <h2>Empathize: Understanding the User</h2>
+      <div class="userresearch">
+        <div>
+          <h3>Research Goals</h3>
+          <p>The very first step: ➡️ To deeply understand the problems faced by entrepreneurs when seeking legal advice.
+          </p>
+          <p>The main objectives of the research were:</p>
+          <ol>
+            <li>Identify <span class="features">entrepreneurs' actions</span> when they require legal assistance.</li>
+            <li>Understand their <span class="features">most common legal needs</span>.</li>
+            <li>Uncover <span class="features">frustrations</span> experienced in obtaining legal advice.</li>
+            <li>Determine the <span class="features">optimal approach</span> to meeting these needs and addressing
+              frustrations.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>Research Methods</h3>
+          <p>A multifaceted approach was needed involving:</p>
+          <ul>
+            <li>Competitive Analysis</li>
+            <li>Surveys and Interviews</li>
+          </ul>
+
+          <h3>Competitive Analysis</h3>
+          <p>📈The research project began with a competitive analysis to gather user insights and frustrations, identify
+            product
+            weaknesses, and uncover opportunities for differentiation and improvement.
+          </p>
+          <p>🌎In Ecuador, there is currently a lack of highly developed legal apps, similar to those in the United
+            States
+            and Europe.</p>
+          <p>📲To draw inspiration, we studied two popular platforms, <span class="features">LegalZoom</span> and <span
+              class="features">Rocket Lawyer</span>, and incorporated
+            feedback from app reviews, including App Review, TechCrunch, GetApp, and more.</p>
+          <details>
+            <summary>
+              Competitive Analysis Summary
+            </summary>
+            <div>
+              <picture>
+                <source srcset="img/untangled/@2swot-analysis.png" />
+                <img src="img/untangled/@3swot-analysis.png" alt="SWOT Analysi" />
+              </picture>
+            </div>
+          </details>
+          <br>
+          <details>
+            <summary>
+              Hypothesis Statement
+            </summary>
+            <div>
+              <ul>
+                <p>Based on the competitive analysis, the hypothesis is that incorporating these features will make the
+                  Untangled app not just <span class="features">useful and friendly</span> but also <span
+                    class="features">desirable</span> compared to its competitors:
+                </p>
+                <ol>
+                  <li><span class="features">Network of Attorneys</span>: Access to expert attorneys for personalized
+                    guidance.</li>
+                  <li><span class="features">User-Friendly Platform</span>: Intuitive design for easy navigation.</li>
+                  <li><span class="features">Money-Back Guarantee</span>.</li>
+                  <li><span class="features">Wide range of legal services</span> to meet different needs.</li>
+                  <li><span class="features">Powerful Algorithm</span>.</li>
+                  <li><span class="features">Fast and Convenient Services</span>: Swift access to legal services through
+                    an accessible app.</li>
+                  <li><span class="features">Prompt Legal Assistance</span> from attorneys when required.</li>
+                  <li><span class="features">Intuitive Form Builder</span>.</li>
+                  <li><span class="features">Strong customer support</span>for timely assistance.</li>
+                </ol>
+              </ul>
+              <br>
+            </div>
+          </details>
+
+          <h3>Surveys and Interviews</h3>
+          <p>Surveys provided preliminary insights, while interviews delved deeper into user preferences and
+            requirements.</p>
+          <ul>
+            <li>The interviews with the entrepreneurs covered a wide range of ages, from 28 to 54 years old, the age
+              range in which most Ecuadorian entrepreneurs are found.</li>
+            <li>There were a total of 5️⃣ interviews.</li>
+          </ul>
+          <details>
+            <summary>
+              Survey and Interviews Main Findings
+            </summary>
+            <div>
+              <p>Here's a quick summary of the 8 key findings:</p>
+              <ol>
+                <li>Common legal needs include model contracts, notary proceedings, affidavits, deeds, and
+                  intellectual
+                  property protection.</li>
+                <li>Full-time entrepreneurs require comprehensive legal support.</li>
+                <li>Most interviewees need a lawyer several times a year, especially those running businesses.</li>
+                <li>For basic legal matters, people tend to consult their trusted network, but they are open to
+                  using legal apps.</li>
+                <li>While many are aware of digital legal services, they primarily use them for simple legal issues.
+                </li>
+                <li>Some stay informed about legal changes through the news and by reading newspaper articles or
+                  social media.</li>
+                <li>The desired app features include FAQs, lawyer consultations,
+                  document templates, reminders, in-app payments, and reliable real-time guidance.</li>
+                <li>Payment transparency, flexible payment options, and customer service are essential to
+                  interviewees.</li>
+                <li>For tax legal matter, almost all users turn to their accountants.</li>
+              </ol>
+            </div>
+          </details>
+          <br>
+          <h3>Initial Insights</h3>
+          <p>The competitive analysis-based hypothesis suggests essential app features but overlooks other critical
+            findings from the survey and interviews:</p>
+          <ol>
+            <li>Specific legal needs (types of legal services).</li>
+            <li>Consultation frequency.</li>
+            <li>Trust in existing networks, especially for tax issues (almost all users turn to accountants).</li>
+            <li>Preference for using legal apps for "simple legal matters".</li>
+            <li>The need of staying informed about regulatory changes.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <section id="define"></section>
+    <div class="container">
+      <h2>Define: Identifying User Needs</h2>
+      <div class="identifying">
+        <p>Now, it's the moment to consolidate all the insights gathered in the Empathize phase.</p>
+        <p>The observations were analyzed, leading to the definition of central problems,
+          referred to as "problem statement": </p>
+        <h3>Problem Statement</h3>
+        <div class="card-p">
+          <p class="post">Entrepreneurs often struggle to find <span class="features">reliable and affordable legal
+              services</span> to help them
+            establish and maintain their businesses within the legal framework.</p>
+          <p class="post">To address their needs, a web application
+            was designed to provide them with <span class="features">cost-effective and convenient access to reliable
+              legal advice and sources of information</span>.</p>
+          <p class="post">This app allows entrepreneurs to quickly resolve common legal inquiries, saving them time and
+            resources in the process.</p>
+        </div>
+        <p>Following this, personas were created to shift the focus onto the human element before advancing to the
+          ideation phase.</p>
+        <h3>Personas Development</h3>
+        <p>The previous analysis was essential for understanding user needs and their significance. From this analysis,
+          <span class="features">two distinct user personas emerged</span>. Meet Sebastian and Pamela:
+        </p>
+        <div class="img-unt">
+          <h4>Sebastian</h4>
+          <picture>
+            <source srcset="img/untangled/personas/@2sebas.png" />
+            <img src="img/untangled/personas/@3sebas.png" alt="Sebastian" />
+          </picture>
+        </div>
+        <br>
+        <div class="divider"></div>
+        <div class="img-unt">
+          <h4>Pamela</h4>
+          <picture>
+            <source srcset="img/untangled/personas/@2pamela.png" />
+            <img src="img/untangled/personas/@3pamela.png" alt="Pamela" />
+          </picture>
+        </div>
+        <br>
+        <div class="testing">
+          <h3>User Journey</h3>
+          <p>Think of a user journey as a story that shows how someone uses a product to accomplish a goal, including
+            all
+            the steps, like using an app. Now, let's explore how Sebastian and Pamela would navigate their way to access
+            convenient and affordable legal advice:
+          </p>
+          <div class="userjourney">
+            <p><span class="features">💁🏾‍♂️Sebastian,</span> eager to protect his intellectual property as a
+              performance, seeks affordable alternatives due
+              to budget constraints that prevent him from hiring a high-cost lawyer:</p>
+            <details>
+              <summary>
+                User Journey Sebastian
+              </summary>
+              <div>
+                <br>
+                <img src="img/untangled/userjourney/@3S.png" alt="User Journey Sebastian" />
+              </div>
+            </details>
+            <p><span class="features">💁🏻‍♀️Pamela,</span> a small business owner, seeks legal consultation to ensure
+              contracts avoid employer obligations and
+              minimize labor liabilities.</p>
+            <details>
+              <summary>
+                User Journey Pamela
+              </summary>
+              <div>
+                <br>
+                <img src="img/untangled/userjourney/@3pamela.png" alt="User Journey Pamela" />
+              </div>
+            </details>
+          </div>
+          <br>
+          <h3>User Flows</h3>
+          <p>User flows are outlined to depict the steps taken by users to accomplish tasks within an app. By these
+            flows,
+            the user experience is understood and enhanced. For each feature of our app, user flows have been
+            created. The flows for "Ask a Lawyer" and "Legal DocCreator" are presented below:</p>
+          <details>
+            <summary>
+              Ask a Lawyer and Create LegalDoc
+            </summary>
+            <div>
+              <br>
+              <picture>
+                <source srcset="img/untangled/userflow/@2userflow.png" />
+                <img src="img/untangled/userflow/@3userflow.png" alt="User Flow" />
+              </picture>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <section id="ideate"></section>
+    <div class="container">
+      <h2>Ideate: Generate Ideas</h2>
+      <div class="solution">
+        <p>💡Following a deep dive into user understanding and the definition of the problem statement, <span
+            class="features">the Ideation Phase was initiated.</span></p>
+        <p>💭A wide array of potential solutions was brainstormed, resulting in the creation of a <span
+            class="features">Sitemap</span>—a tool that represents the structure of the web application.</p>
+        <p>✅The initial Sitemap was subsequently refined based on <span class="features">Card Sorting Results</span>,
+          allowing for the progression to the design of low and mid-fidelity wireframes.</p>
+        <h3>Card Sorting</h3>
+        <p>Card sorting is a user research method where participants categorize information to improve website and app
+          organization.</p>
+        <picture>
+          <source srcset="img/untangled/@2card.png" class="centered">
+          <img src="img/untangled/@3card.png" alt="Card Sorting Methodology" style="width: 100%; padding: 8px;">
+        </picture>
+        <p>During the open card sorting exercise, where participants independently group and label website content, many
+          important insights became evident. Here are the main ones:</p>
+        <ol>
+          <li>Many participants, unfamiliar with legal terms,
+            <span class="features">struggled to classify items accurately</span>. Despite this, maintaining the existing
+            legal categorization made sense (Ask a Lawyer and DocCreator as 2 separate features).
+          </li>
+          <li>The exercise emphasized the importance of a <span class="features">comprehensive onboarding process</span>
+            to help users comprehend the application's functions and navigate it
+            effectively.</li>
+          <li>Also, to address user confusion, the feature Q&A section with FAQs should be added.<span
+              class="features">Legal services can be complex
+              for non-lawyers</span>.</li>
+          <li>The exercise highlighted the need to exclude "My legal documents" and "My lawyers' answers" from the "My
+            profile" section and <span class="features">remove several cards to simplify processes</span>.</li>
+        </ol>
+        <p>In response to the card sorting results and an usability test, the site map has been updated three times,
+          leading to this latest version:</p>
+        <details>
+          <summary>
+            Untangled Site Map
+          </summary>
+          <div>
+            <picture>
+              <source srcset="img/untangled/sitemap/@2sitemap.png" class="container-image" />
+              <img src="img/untangled/sitemap/@3sitemap.png" alt="Site Map" />
+            </picture>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <section id="prototype"></section>
+    <div class="container">
+      <h2>Prototype: Develop Solutions</h2>
+      <div class="prototype">
+        <p>🎯Based on previous analysis and results, the sitemap was adjusted to better match the user's perception and
+          reality of legal service delivery, resulting in a more intuitive organization of content. The number of
+          categories was reduced to make it easier for users to navigate and understand the application.</p>
+        <p>Now, it was possible to design 💵cost-effective paper prototypes of simplified versions of the web
+          application and the four basic features
+          to explore its Desirability, Feasibility, and Viability:</p>
+        <h4>1. Onboarding</h4>
+        <picture>
+          <source srcset="img/untangled/wireframes/@1onboarding.png" class="wireframes" />
+          <img src="img/untangled/wireframes/@2onboarding" alt="Onboarding" style="width: 80%;" />
+        </picture>
+        <h4>2. Access to my Account</h4>
+        <picture>
+          <source srcset="img/untangled/wireframes/@1myaccount.png" class="wireframes" />
+          <img src="img/untangled/wireframes/@2myaccount.png" alt="My Account" style="width: 80%;" />
+        </picture>
+        <h4>3. Ask a Laywer</h4>
+        <picture>
+          <source srcset="img/untangled/wireframes/@1askalawyer.png" class="wireframes" />
+          <img src="img/untangled/wireframes/@2askalawyer.png" alt="Ask a Lawyer" style="width: 80%;" />
+        </picture>
+        <h4>4. Create a LegalDoc</h4>
+        <picture>
+          <source srcset="img/untangled/wireframes/@1doccreator.png" class="wireframes" />
+          <img src="img/untangled/wireframes/@2doccreator.png" alt="Create LegalDocs" style="width: 80%;" />
+        </picture>
+        <p>The prototypes underwent multiple changes following testing. User feedback was collected, leading to
+          improvements, and the refined prototype was subjected to another round of usability testing:
+        </p>
+        <picture>
+          <source srcset="img/untangled/@2prototypemid.png" class="midprototype" />
+          <img src="img/untangled/@3prototypemid.png" alt="mid-fidelity prototypes"
+            style="width: 80%; border-radius: 20px" />
+        </picture>
+      </div>
+    </div>
+
+    <section id="test"></section>
+    <div class="container">
+      <h2>Test: Validate Solutions</h2>
+      <div class="identifying">
+        <p>A usability test on Figma's medium-fidelity prototypes assessed user interaction ease. The feedback refined
+          the prototype, leading to another test with the following specific parameters:
+        </p>
+        <div class="grid-container-usability">
+          <div class="grid-item-usability">
+            <h4>Tasks</h4>
+            <p>Six users were assigned the following 4 tasks:</p>
+            <p>1. Making an appointment with a lawyer</p>
+            <p>2. Creating a non-disclosure agreement</p>
+            <p>3. Accessing all legal documents created</p>
+            <p>4. Accessing a lawyer's response</p>
+          </div>
+          <div class="grid-item-usability">
+            <h4>Research Objectives</h4>
+            <p>1. Evaluate initial user interactions with the smartphone web app.</p>
+            <p>2. Determine app comprehension and perceived value.</p>
+            <p>3. Measure task completion and time.</p>
+            <p>4. Identify questions, needs, and errors during testing.</p>
+          </div>
+          <div class="grid-item-usability">
+            <h4>Target Audience</h4>
+            <p>Entrepreneurs between 25 and 54 years old in Ecuador.</p>
+            <p>This age range represents 66.93% of entrepreneurs in Ecuador (<a
+                href="https://www.espae.edu.ec/wp-content/uploads/2021/02/GEM_Ecuador_2019.pdf" style="color:#7390f9;"
+                target="_blank">source</a>).</p>
+          </div>
+          <div class="grid-item-usability">
+            <h4>Methodology</h4>
+            <p>1. Moderated in-person testing with two Ecuadorian and Berlin residents.</p>
+            <p>2. Moderated remote testing with four entrepreneurs in Quito, Ecuador.</p>
+          </div>
+          <div class="grid-item-usability">
+            <h4>Environment</h4>
+            <p>The tests were administered both in-person and remotely.</p>
+            <p>Remote participants accessed the Figma prototype on their computers and shared their screens during
+              the test, utilizing Microsoft Teams and Google Meetings according to the user's choice.</p>
+            <p>In-person testing took place at the user's home, and the sessions were recorded using a camera and
+              tripod.</p>
+          </div>
+          <div class="grid-item-usability">
+            <h4>Metrics Collected</h4>
+            <p>During the usability testing process, the following metrics were collected to assess the application's
+              performance:</p>
+            <p>-<span class="features">Usability Problems</span>: Assessed using the <a
+                href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/"
+                style="color:#7390f9;" target="_blank">The Severity Ratings for Usability Problems Framework</a>, that
+              evaluates the severity of design issues.</p>
+            <p>-<span class="features">Level of Satisfaction</span>: Gauged with the <a
+                href="https://survicate.com/survey-templates/after-scenario-questionnaire/#:~:text=An%20after%2Dscenario%20questionnaire%20is,and%20identify%20areas%20for%20improvement."
+                target="_blank" style="color: #7390f9;">After-Scenario Questionnaire (ASQ)</a> to collect feedback on
+              participants' experience.</p>
+          </div>
+        </div>
+        <h3>Analysing the Results</h3>
+        <div class="testing">
+          <p>The outcomes of the six usability tests have been processed and organized into an Affinity Map and a
+            Rainbow
+            spreadsheet to visually represent the observations and common issues encountered by participants.</p>
+          <details>
+            <summary>
+              Affinity Map
+            </summary>
+            <div>
+              <picture class="zoom">
+                <source srcset="img/untangled/affinitymap@2.png" class="container-image" />
+                <img src="img/untangled/affinitymap@3.png" alt="Affinity Map" />
+              </picture>
+            </div>
+          </details>
+          <br>
+          <details>
+            <summary>
+              Rainbow spreadsheet
+            </summary>
+            <div>
+              <br>
+              <picture class="zoom">
+                <source srcset="img/untangled/rainbow/@1rainbow.png" class="container-image" />
+                <img src="img/untangled/rainbow/@2rainbow.png" alt="Rainbow spreadsheet" />
+              </picture>
+            </div>
+          </details>
+          <p><span class="features">Three noteworthy findings are:</span></p>
+          <h4>Discoverability Issues</h4>
+          <p>The 6 usability tests revealed issues mostly related to discoverability. Users appreciated the app's
+            utility but struggled with tasks 1, 3, and 4, and often confused between "profile" and "home".</p>
+          <h4>Two Personas Emerged</h4>
+          <p>User feedback has illuminated two distinct user categories:</p>
+          <li>Financially privileged entrepreneurs seeking elegance in the app</li>
+          <li>Lower-income users concerned about affordability and user-friendliness.</li>
+          </ol>
+          <p>Based on the goal of this project, feedback from the target persona of entrepreneurs in need of
+            affordable legal advice will be prioritized. However, this depends on business goals.
+          </p>
+          <h4>The Need to Alleviate Legal Service Concerns</h4>
+          <p>During the usability test, I observed that certain users expressed apprehension regarding the cost of
+            legal services and the complexity of legal issues, understandably so, as these topics can be unsettling
+            for many. After conducting research on colors known to evoke a sense of calmness, I determined that
+            using
+            blue and green would be suitable color options for a legal app.</p>
+          <p>A preference test regarding colors was performed. The results of the test revealed a significant
+            distinction between blue and green colors, with
+            83% favoring blue. Therefore, blue tones were chosen as they were the preferred color. One user even
+            remarked that blue is a classic, clean color often associated with trust.</p>
+          </li>
+          <picture class="zoom">
+            <source srcset="img/untangled/@1preferencetest.png" class="container-image" />
+            <a href="https://my.helio.app/report/01GW7RJBGSBBB6CQF1E0PMNMMQ/section/100291?section_id=100291"
+              target="_blank"><img src="img/untangled/@2preferencetest.png" alt="Preference Test Results" /></a>
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="container quote">
+      <div class="card">
+        <p class="post">
+          <span><img class="quote-img" src="img/about/@1testimonial.png"></span>
+          <span class="post-txt">If it becomes a reality, it would be a dream for Ecuadorian entrepreneurs.</span>
+          <span class="nice-img">👌🏼</span>
+        </p>
+      </div>
+    </div>
+
+
+    <section id="iteration"></section>
+    <div class="container" id="5">
+      <h2>Iteration: Last and Upcoming Steps</h2>
+      <div class="conclusion">
+        <h3>Design Harmony and Accessibility Commitment</h3>
+        <p>High-fidelity wireframes were crafted using <a
+            href="https://www.interaction-design.org/literature/topics/gestalt-principles#what_are_the_gestalt_principles?-0"
+            target="_blank" style="color: #00306b;">Gestalt Theory</a> and <a
+            href="https://m2.material.io/design/introduction" target="_blank" style="color: #00306b;">Material Design
+            Principles</a>, focusing on clear
+          organization, consistent elements, and a soothing palette of reassuring blue shades.</p>
+        <p>The app is friendly to everyone! It follows guidelines to make sure the colors and text are easy to
+          see. Nevertheless, incorporation of specialized technology to assist users with diverse abilities is
+          pending.
+        </p>
+        <img src="img/untangled/theend@2.png" alt="Thank You">
+        <h3>UX Evolution: Collaborative Refinement</h3>
+        <p>Untangled's design has been refined with the valuable input and suggestions from fellow UX designers,
+          significantly shaping this latest version. The primary features are in place, but some issues still need
+          attention. The "DocCreator" and Chatbot features, still need fine-tuning for optimal performance.</p>
+        <h3>User-Centered Assessment and Expansion</h3>
+        <picture class="zoom">
+          <source srcset="img/untangled/@2feedbackux.png" class="container-image" />
+          <img src="img/untangled/@1feedbackux.png" alt="Feedback UX peers"
+            style="border-radius: 20px; width: 50%; display: block; margin: 0 auto;">
+        </picture>
+        <p>Continued assessments are necessary to ensure alignment with business goals, including pricing
+          accessibility.
+        </p>
+        <p>Furthermore, it's essential to assess user needs, preferences, and expectations with a specific focus on UI
+          testing, A/B testing, accessibility and usability testing and user feedback surveys.</p>
+        <p>Lastly, it's crucial to carry out a separate analysis tailored to a different audience, such as lawyers,
+          legal firms, or other service providers interested in offering this service.
+        </p>
+        <h3>Latest Interactive Prototype Access:</h3>
+        <p>Access to the latest interactive prototype may be granted upon request.</p>
+        <picture class="zoom">
+          <source srcset="img/untangled/wireframes/@2latest-design.png" class="container-image" />
+          <img src="img/untangled/wireframes/@3latest-design.png" alt="Mock Up"
+            style="border-radius: 20px; width: 50%; display: block; margin: 0 auto;">
+        </picture>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <span class="features-thanks">Thank you for your time and attention! 😸!</span>
+    </div>
+  </main>
+
+  <footer class="center">
+    <div class="container">
+      <div id="contact">
+        <h2 class="center">Get in Touch</h2>
+        <p>Contact me to work together to create impactful experiences!</p>
+        <div>
+          <a href="contact.html" class="button-contact">Contact</a>
+        </div>
+      </div>
+      <div class="social-media">
+        <p>I am also on:</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/beatrizmeythaler/?locale=en_US" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.behance.net/beatrizmeythaler" target="_blank">
+            <i class="fab fa-behance"></i>
+          </a>
+        </div>
+      </div>
+      <p>&copy; 2023 Beatriz Meythaler. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

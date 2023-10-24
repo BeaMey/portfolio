@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Study</title>
+</head>
+<body>
+    <h1>Welcome to My Case Study</h1>
+    
+    <!-- Password Input Form -->
+    <form id="password-form">
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="button" id="submit-button">Submit</button>
+    </form>
+    
+    <!-- Case Study Content (Initially Hidden) -->
+    <div id="case-study" style="display: none;">
+        <!-- Place your case study content here -->
+        <p>This is the content of my case study.</p>
+    </div>
+    
+    <script>
+        // Password Validation Function
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            // Replace 'yourpassword' with the actual password you want to use
+            if (password === "800090001990") {
+                document.getElementById("password-form").style.display = "none";
+                document.getElementById("case-study").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+        
+        // Add Event Listener to Submit Button
+        var submitButton = document.getElementById("submit-button");
+        submitButton.addEventListener("click", validatePassword);
+    </script>
+</body>
+</html>
