@@ -65,6 +65,22 @@ h2 {
   color: var(--dark-purple);
 }
 
+h3 {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.125;
+  font-family: "Playfair Display", sans-serif;
+  color: var(--dark-purple);
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.125;
+  font-family: "Playfair Display", sans-serif;
+  color: var(--dark-purple);
+}
+
 .eight h2 {
   text-align: center;
   text-transform: uppercase;
@@ -157,6 +173,33 @@ h3 {
   text-decoration: none;
   border-color: var(--grape);
   text-decoration: none;
+}
+
+.button-project {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ACDEFD;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px 24px;
+  height: 40px;
+  min-width: 64px;
+  border-radius: 20px;
+  border: 1.5px solid #ACDEFD;
+  box-sizing: border-box;
+  margin-top: 8px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+.button-project:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  background-color: #ACDEFD;
+  color: white;
 }
 
 /* Contact Button */
@@ -1376,7 +1419,7 @@ Extra-large devices (1920px or larger)
 .intro span {
   display: inline-block;
   margin-top: 12px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
@@ -1478,5 +1521,4 @@ Extra-large devices (1920px or larger)
   display: flex;
   align-items: center;
   justify-content: center;
-}
 }
