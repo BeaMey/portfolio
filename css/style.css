@@ -799,41 +799,66 @@ main {
   }
 }
 
-/* table of contents */
-.case-category-wrap {
+/* Style the tab */
+.tab {
   display: grid;
   align-content: space-evenly;
   grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 10px;
+  gap: 10px
 }
 
-.case-category-wrap h2 {
-  font-size: 24px;
-  margin-right: 10px; /* Add margin between the title and items */
-}
-
-.case-category-wrap a {
-  text-decoration: none;
+/* Style the buttons inside the tab */
+.tab button {
+  cursor: pointer;
+  transition: 0.3s;
   color: #7390f9;
   padding: 10px;
   border: 1px solid #7390f9;
   border-radius: 5px;
   text-align: center;
-  margin-right: 10px; /* Add margin between items */
+  margin-right: 10px;
+  font-size: 1.2em;
+  margin-right: 10px; 
 }
 
-.case-category-wrap a:hover {
+/* Change background color of buttons on hover */
+.tab button:hover  {
   background-color: #7390f9;
   color: white;
 }
 
-@media screen and (min-width: 640px) {
-  .case-category-wrap a {
-    margin-right: 0; /* Remove right margin for smaller screens */
-    margin-bottom: 10px; /* Add margin between rows */
-  }
+/* Create an active/current tablink class */
+.tab button.active {
+  color: white;
+  padding: 10px;
+  border: 1px solid #7390f9;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+ 
 
-  .case-category-wrap {
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {
+  background-color: #7390f9;
+  color: black;
+}
+
+@media screen and (min-width: 640px) {
+  .tab{
     grid-template-columns: repeat(6, 1fr); /* Two columns */
   }
 }
