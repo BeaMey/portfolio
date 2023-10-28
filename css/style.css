@@ -423,7 +423,7 @@ nav a:focus {
 /* PROJECTS card list projects */
 .container .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(2, minmax(270px, 1fr));
   max-width: 1200px;
   margin: 0, auto;
   padding: 20px;
