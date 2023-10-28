@@ -145,7 +145,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
+  background-color: white;
   color: var(--grape);
   font-weight: 400;
   font-size: 15px;
@@ -290,6 +290,14 @@ header {
   z-index: 999;
 }
 
+.germanpro {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0 4px;
+  z-index: 999;
+}
+
 header .container {
   display: flex;
   align-items: left;
@@ -304,6 +312,13 @@ header .container {
   box-shadow: 5px 21px 20px rgba(239, 222, 255, 0.2);
   -webkit-box-shadow: 5px 21px 20px rgba(239, 222, 255, 0.2);
   -moz-box-shadow: 5px 21px 20px rgba(239, 222, 255, 0.2);
+}
+
+.css-box-shadow.germanpro {
+  background: #f5f5f5; /* light gray background */
+  padding: 20px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 -4px 12px rgba(128, 128, 128, 0.1), 0 4px 12px rgba(128, 128, 128, 0.1); /* shadows on top and bottom */
 }
 
 .logo {
@@ -416,7 +431,7 @@ nav a:focus {
 }
 
 .card-list .card-item {
-  background: #fff;
+  background: white;
   padding: 26px;
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
@@ -485,7 +500,7 @@ nav a:focus {
 
 .card-list .card-item:hover .arrow {
   background: #000;
-  color: #fff;
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -628,7 +643,7 @@ main {
 .contents-wraper .indicators .dot {
   width: 20px;
   height: 20px;
-  margin: 0px, 3px;
+  margin: 0px 3px;
   border: 3px solid #aaa;
   border-radius: 50%;
   display: inline-block;
@@ -690,6 +705,38 @@ main {
   .container.testimonials .contents-wraper {
    min-height: 400px;
  }
+}
+
+
+/* Untangled project page */
+.germanapp {
+  padding: 20px;
+  border-radius: 20px;
+  background-color:#ff720e;
+}
+
+.germanapp p {
+ color: white;
+ font-size: 22px;
+}
+
+.germanappproblem {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #ECF0FF;
+  flex: 0 0 50%; 
+  display: flex; /* Asegura que "theproblem" se expanda completamente en altura */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.germandetail {
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid #ECF0FF;
+  flex: 0 50%;
+  display: flex; /* Asegura que "projectdetail" se expanda completamente en altura */
+  flex-direction: column;
 }
 
 /* Untangled project page */
@@ -764,12 +811,20 @@ main {
   padding: 30px;
   border-radius: 20px;
   background-color: #ECF0FF;
+  flex: 0 0 50%; 
+  display: flex; /* Asegura que "theproblem" se expanda completamente en altura */
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projectdetail {
   padding: 20px;
   border-radius: 20px;
   border: 4px solid #ECF0FF;
+  flex: 0 50%;
+  display: flex; /* Asegura que "projectdetail" se expanda completamente en altura */
+  flex-direction: column;
+  justify-content: center;
 }
 
 .introduction-wrap {
@@ -777,20 +832,6 @@ main {
   flex-direction: row;
   align-items: stretch; /* Asegura que todos los hijos de introduction-wrap tengan la misma altura */
   gap: 12px;
-}
-
-.theproblem {
-  flex: 0 0 70%; 
-  display: flex; /* Asegura que "theproblem" se expanda completamente en altura */
-  flex-direction: column;
-  justify-content: center;
-}
-
-.projectdetail {
-  flex: 0 30%;
-  display: flex; /* Asegura que "projectdetail" se expanda completamente en altura */
-  flex-direction: column;
-  justify-content: center;
 }
 
 @media (max-width: 889px) {
@@ -819,6 +860,7 @@ main {
   margin-right: 10px;
   font-size: 1.2em;
   margin-right: 10px; 
+  background-color: white;
 }
 
 /* Change background color of buttons on hover */
@@ -829,7 +871,8 @@ main {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  color: white;
+  color:white;
+  background-color: #7390f9;
   padding: 10px;
   border: 1px solid #7390f9;
   border-radius: 5px;
@@ -854,7 +897,7 @@ main {
 
 .topright:hover {
   background-color: #7390f9;
-  color: black;
+  color: white;
 }
 
 @media screen and (min-width: 640px) {
@@ -890,7 +933,7 @@ main {
 }
 
 .prototype {
-  border: 4px solid #d8e1fe;
+  border: 8px solid #d8e1fe;
   padding: 30px;
   border-radius: 20px;
 }
@@ -909,7 +952,7 @@ main {
 }
 
 .conclusion {
-  background-color: #BDE1E2;
+  background-color: #D2F6F7;
   padding: 30px;
   border-radius: 20px;
 }
@@ -1400,9 +1443,30 @@ Extra-large devices (1920px or larger)
   }
 }
 
+/* Estilo para case study "GermanPro" */
+.container.german {
+  background: black;
+  color: #fff;
+  text-align: center;
+  border: 20px solid #fff;
+  border-radius: 30px;
+}
+
+.container.german h1 {
+  color: #ff720e;
+}
+
+.container.german a {
+  color: white;
+}
+
+.container.img {
+  color: white;
+}
+
 
 /* Estilo para case study "Untangled" */
-/* Portada */
+/* Portada untangled*/
 .container.intro {
   background: linear-gradient(to bottom, #efdeff, #d8e1fe, #BDE1E2);
   color: #fff;
