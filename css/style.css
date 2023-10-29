@@ -1106,19 +1106,30 @@ footer {
   padding-top: 20px;
 }
 
-/* Contact Form */
-
-
 /* work section*/
 #work-section .row {
   color: var(--grape);
 }
 
+
+.profilepic {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  height: 60%;   
+  padding-right: 24px;
+}
+
+
 /* about me page */
 .beatriz-img {
-  max-height: max-content;
-  object-fit: scale-down;
-  display: block;
+  max-width: 50%;
+  height: auto;
+}
+
+.right-align {
+  display: flex;
+  justify-content: center;
 }
 
 /* animation about me */
@@ -1263,6 +1274,17 @@ Medium devices (640px and larger)
     float: left;
   }
 
+  /* Column About me */
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+    align-items: center; /* Vertically align to the middle */
+    justify-content: center;
+  }
+
   .row-mywork::after {
     content: "";
     clear: both;
@@ -1301,15 +1323,10 @@ Medium devices (640px and larger)
 }
 
   /* About me page */
-  .about-story {
+  .container.about-story {
     display: flex;
-  }
-
-  .beatriz-img {
-    padding-right: 8px;
-    max-height: 400px;
-    padding-right: 30px;
-  }
+    align-items: stretch;  /* Ensures all direct children are the full height of the parent container */
+}
 
   .about-button {
     font-size: 18px;
@@ -1355,25 +1372,8 @@ Large devices (1024px or larger)
   }
 
   /* colums*/
-  .col-md-4 {
-    width: 33.33%;
-  }
-
   .col-md-6 p {
     max-width: 400px;
-  }
-
-  .col-md-8 {
-    width: 66.66%;
-  }
-
-  .flex-container-participants {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .paragraph-participant {
-    font-size: 16px;
-    text-align: center;
   }
 
   .iframe-container {
@@ -1387,10 +1387,6 @@ Large devices (1024px or larger)
 
   ul.role {
     margin-left: 10px;
-  }
-
-  .beatriz-img {
-    max-height: 360px;
   }
 
   .about-button {
@@ -1422,10 +1418,6 @@ X-large devices (1440px or larger)
   .paragraph-participant {
     font-size: 18px;
     text-align: left;
-  }
-
-  .beatriz-img {
-    max-height: 550px;
   }
 
   .button {
