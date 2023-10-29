@@ -506,7 +506,6 @@ nav a:focus {
 }
 }
 
-
 @media screen and (max-width: 980px) {
   .card-list {
     margin: 0 auto;
@@ -1189,6 +1188,17 @@ ins:after {
     color: #000; /* Cambia el color del texto a un color que contraste */
     z-index: -1;
   }
+}
+
+/*MY WORK SITE*/
+.menuwork a {
+  color: #622786;  /* Example blue color */
+  text-decoration: none;  /* Remove the underline */
+  transition: color 0.3s;  /* Smooth color transition for hover effect */
+}
+
+.menuwork a:hover {
+  color: #0d478e;  /* Darker blue for hover state */
 }
 
 /* ==============================
