@@ -57,7 +57,6 @@
         </nav>
       </div>
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#header" class="up">&#9650;</a></button>
   </header>
 
   <main>
@@ -109,10 +108,10 @@
       <h2>The Problem</h2>
       <div class="introduction-wrap">
         <div class="theproblem">
-          <p>👩🏻‍⚖️Entrepreneurs often struggle to find <span class="features">reliable and affordable legal
+          <p>👩🏻‍⚖️ Entrepreneurs often struggle to find <span class="features">reliable and affordable legal
               services</span> to navigate the legal
             framework and protect their interests and businesses.</p>
-          <p><span class="features">Goal of the Project</span>:📱The Untangle App directly addresses this challenge by
+          <p><span class="features">Goal of the Project</span>:📱 The Untangle App directly addresses this challenge by
             offering <span class="features">cost-effective
               access to trustworthy and convenient legal advice</span>, enabling entrepreneurs to resolve common legal
             queries efficiently while saving valuable time and resources..
@@ -121,28 +120,29 @@
         <div class="projectdetail">
           <div>
             <span class="features">My Role:</span>
-            <p>♟️Sole UX Designer, in collaboration with legal experts and
+            <p>♟️ Sole UX Designer, in collaboration with legal experts and
               entrepreneurs.
               Part of UX certification, Berlin.</p>
             <span class="features">Duration:</span>
-            <p>⏱️January to July 2023.</p>
+            <p>⏱️ January to July 2023.</p>
             <span class="features">Tools:</span>
-            <p>⚒️Figma, Miro, Trello, Canva, Optimal Workshop, Helio and Survey Monkey.</p>
+            <p>⚒️ Figma, Miro, Trello, Canva, Optimal Workshop, Helio and Survey Monkey.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><a href="#process" class="up">&#9650;</a></button>
       <p>💡<span class="features">Design thinking</span> was employed to tackle this challenge, comprising the
-        following 6 phases <span class="features">(🖰 click to see)</span>:</p>
-      <div class="container tab">
-        <button class="tablinks" onclick="openCity(event, 'Empathize')" id="defaultOpen">Empathize</button>
-        <button class="tablinks" onclick="openCity(event, 'Define')">Define</button>
-        <button class="tablinks" onclick="openCity(event, 'Ideate')">Ideate</button>
-        <button class="tablinks" onclick="openCity(event, 'Prototype')">Prototype</button>
-        <button class="tablinks" onclick="openCity(event, 'Test')">Test</button>
-        <button class="tablinks" onclick="openCity(event, 'Iteration')">Iteration</button>
+        following 6 phases <span class="features">(click to see)</span>:</p>
+      <div class="container tab" id="process">
+        <button class="tablinks" onclick="openCity(event, 'Empathize')" id="defaultOpen">1. Empathize</button>
+        <button class="tablinks" onclick="openCity(event, 'Define')">2. Define</button>
+        <button class="tablinks" onclick="openCity(event, 'Ideate')">3. Ideate</button>
+        <button class="tablinks" onclick="openCity(event, 'Prototype')">4. Prototype</button>
+        <button class="tablinks" onclick="openCity(event, 'Test')">5. Test</button>
+        <button class="tablinks" onclick="openCity(event, 'Iteration')">6. Iteration</button>
       </div>
     </div>
 
@@ -176,17 +176,18 @@
             </ul>
 
             <h3>Competitive Analysis</h3>
-            <p>📈The research project began with a competitive analysis to gather user insights and frustrations,
+            <p>📈 The research project began with a competitive analysis to gather user insights and frustrations,
               identify
               product
               weaknesses, and uncover opportunities for differentiation and improvement.
             </p>
-            <p>🌎In Ecuador, there is currently a lack of highly developed legal apps, similar to those in the United
+            <p>🌎 In Ecuador, there is currently a lack of highly developed legal apps, similar to those in the United
               States
               and Europe.</p>
-            <p>📲To draw inspiration, we studied two popular platforms, <span class="features">LegalZoom</span> and
+            <p>📲 To draw inspiration, we studied two popular platforms, <span class="features">LegalZoom</span> and
               <span class="features">Rocket Lawyer</span>, and incorporated
-              feedback from app reviews, including App Review, TechCrunch, GetApp, and more.</p>
+              feedback from app reviews, including App Review, TechCrunch, GetApp, and more.
+            </p>
             <details>
               <summary>
                 Competitive Analysis Summary
@@ -237,44 +238,38 @@
                 range in which most Ecuadorian entrepreneurs are found.</li>
               <li>There were a total of 5️⃣ interviews.</li>
             </ul>
-            <details>
-              <summary>
-                Survey and Interviews Main Findings
-              </summary>
-              <div>
-                <p>Here's a quick summary of the 8 key findings:</p>
-                <ol>
-                  <li>Common legal needs include model contracts, notary proceedings, affidavits, deeds, and
-                    intellectual
-                    property protection.</li>
-                  <li>Full-time entrepreneurs require comprehensive legal support.</li>
-                  <li>Most interviewees need a lawyer several times a year, especially those running businesses.</li>
-                  <li>For basic legal matters, people tend to consult their trusted network, but they are open to
-                    using legal apps.</li>
-                  <li>While many are aware of digital legal services, they primarily use them for simple legal issues.
-                  </li>
-                  <li>Some stay informed about legal changes through the news and by reading newspaper articles or
-                    social media.</li>
-                  <li>The desired app features include FAQs, lawyer consultations,
-                    document templates, reminders, in-app payments, and reliable real-time guidance.</li>
-                  <li>Payment transparency, flexible payment options, and customer service are essential to
-                    interviewees.</li>
-                  <li>For tax legal matter, almost all users turn to their accountants.</li>
-                </ol>
-              </div>
-            </details>
-            <br>
-            <h3>Initial Insights</h3>
-            <p>The competitive analysis-based hypothesis suggests essential app features but overlooks other critical
-              findings from the survey and interviews:</p>
+
+            <p>Here's a quick summary of the 8 key findings:</p>
             <ol>
-              <li>Specific legal needs (types of legal services).</li>
-              <li>Consultation frequency.</li>
-              <li>Trust in existing networks, especially for tax issues (almost all users turn to accountants).</li>
-              <li>Preference for using legal apps for "simple legal matters".</li>
-              <li>The need of staying informed about regulatory changes.</li>
+              <li>For basic legal matters, people tend to consult their trusted network, but they are open to
+                using legal apps.</li>
+              <li>The desired app features include FAQs, lawyer consultations,
+                document templates, reminders, in-app payments, and reliable real-time guidance.</li>
+              <li>Payment transparency, flexible payment options, and customer service are essential to
+                interviewees.</li>
+              <li>While many are aware of digital legal services, they primarily use them for "simple legal issues".
+              </li>
+              <li>Common legal needs include model contracts, notary proceedings, affidavits, deeds, and
+                intellectual
+                property protection.</li>
+              <li>Some stay informed about legal changes through the news and by reading newspaper articles or
+                social media.</li>
+              <li>For tax legal matter, almost all users turn to their accountants.</li>
+              <li>Full-time entrepreneurs require comprehensive legal support (Mainly: Tax, Labor and Intelletual
+                Property protection).</li>
+              <li>Most interviewees need a lawyer several times a year, especially those running businesses.</li>
             </ol>
           </div>
+          <h3>Initial Insights</h3>
+          <p>The competitive analysis-based hypothesis suggests essential app features but overlooks other critical
+            findings from the survey and interviews, such as:</p>
+          <ol>
+            <li>Specific legal needs (types of legal services).</li>
+            <li>Consultation frequency.</li>
+            <li>Trust in existing networks, especially for tax issues (almost all users turn to accountants).</li>
+            <li>Preference for using legal apps for "simple legal matters".</li>
+            <li>The need of staying informed about regulatory changes.</li>
+          </ol>
         </div>
       </div>
     </div>
@@ -332,7 +327,7 @@
               convenient and affordable legal advice:
             </p>
             <div class="userjourney">
-              <p><span class="features">💁🏾‍♂️Sebastian,</span> eager to protect his intellectual property as a
+              <p><span class="features">💁🏾‍♂️ Sebastian,</span> eager to protect his intellectual property as a
                 performance, seeks affordable alternatives due
                 to budget constraints that prevent him from hiring a high-cost lawyer:</p>
               <details>
@@ -346,7 +341,8 @@
                   </div>
                 </div>
               </details>
-              <p><span class="features">💁🏻‍♀️Pamela,</span> a small business owner, seeks legal consultation to ensure
+              <p><span class="features">💁🏻‍♀️ Pamela,</span> a small business owner, seeks legal consultation to
+                ensure
                 contracts avoid employer obligations and
                 minimize labor liabilities.</p>
               <details>
@@ -389,11 +385,11 @@
       <div class="container">
         <h2>Ideate: Generate Ideas</h2>
         <div class="solution">
-          <p>💡Following a deep dive into user understanding and the definition of the problem statement, <span
+          <p>💡 Following a deep dive into user understanding and the definition of the problem statement, <span
               class="features">the Ideation Phase was initiated.</span></p>
-          <p>💭A wide array of potential solutions was brainstormed, resulting in the creation of a <span
+          <p>💭 A wide array of potential solutions was brainstormed, resulting in the creation of a <span
               class="features">Sitemap</span>—a tool that represents the structure of the web application.</p>
-          <p>✅The initial Sitemap was subsequently refined based on <span class="features">Card Sorting Results</span>,
+          <p>✅ The initial Sitemap was subsequently refined based on <span class="features">Card Sorting Results</span>,
             allowing for the progression to the design of low and mid-fidelity wireframes.</p>
           <h3>Card Sorting</h3>
           <p>Card sorting is a user research method where participants categorize information to improve website and app
@@ -443,9 +439,9 @@
       <div class="container">
         <h2>Prototype: Develop Solutions</h2>
         <div class="prototype">
-          <p>🎯The sitemap was adjusted to better match the user's perception and
+          <p>🎯 The sitemap was adjusted to better match the user's perception and
             reality of legal service delivery, resulting in a more intuitive organization of content.</p>
-          <p>#️⃣The number of
+          <p>#️⃣ The number of
             categories was reduced to make it easier for users to navigate and understand the application.</p>
           <p>Now, it was possible to design 💵cost-effective paper prototypes of simplified versions of the web
             application and the four basic features
@@ -630,12 +626,12 @@
           <p>Untangled's design has been refined with the valuable input and suggestions from fellow UX designers,
             significantly shaping this latest version. The primary features are in place, but some issues still need
             attention. The "DocCreator" and Chatbot features, still need fine-tuning for optimal performance.</p>
-          <h3>User-Centered Assessment and Expansion</h3>
           <picture class="zoom">
             <source srcset="img/untangled/@2feedbackux.png" class="container-image" />
             <img src="img/untangled/@1feedbackux.png" alt="Feedback UX peers"
               style="border-radius: 20px; width: 50%; display: block; margin: 0 auto;">
           </picture>
+          <h3>User-Centered Assessment and Expansion</h3>
           <p>Continued assessments are necessary to ensure alignment with business goals, including pricing
             accessibility.
           </p>
@@ -677,7 +673,7 @@
               conveys trust and tranquility.</li>
             <li>In retrospect, I would've liked to explore a design that also appeals to wealthier entrepreneurs.</li>
             <li>I believe collaborating with legal firms and more lawyers would have enriched the project, especially to
-              integrate pro-bono services and a complete list of services and prices.</li>
+              integrate a list of services and prices.</li>
           </ul>
 
           <h4>Challenges and Tools:</h4>
@@ -687,8 +683,12 @@
             <li>Not everyone was willing to be recorded, limiting subsequent review.</li>
             <li>My initial skills in Figma limited the design of the first interactive prototype, though over time I
               improved my proficiency with the tool.</li>
+            <li>Due to time constraints, I was not possible to also cater to affluent entrepreneurs seeking elegance in
+              the application. While targeting this demographic could have been lucrative as they are typically willing
+              to pay more, the primary objective was to assist entrepreneurs who face challenges accessing legal
+              services because of their cost.
+            </li>
           </ul>
-
           <h4>Lessons for Future Projects:</h4>
           <ul>
             <li>If I could start over, I would replicate the process up to the usability tests.</li>
