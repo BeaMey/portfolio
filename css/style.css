@@ -423,10 +423,7 @@ nav a:focus {
 /* PROJECTS card list projects */
 .container .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  max-width: 1200px;
-  margin: 0, auto;
-  padding: 20px;
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
@@ -503,11 +500,12 @@ nav a:focus {
   color: white;
 }
 
-@media (max-width: 1200px) {
-  .card-list .card-item {
-    padding: 15px;
-  }
+@media screen and (min-width: 640px) {
+.container .card-list {
+  grid-template-columns: repeat(2, 1fr);
 }
+}
+
 
 @media screen and (max-width: 980px) {
   .card-list {
