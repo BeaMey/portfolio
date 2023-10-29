@@ -35,7 +35,7 @@ body {
 .hero-section span {
   margin-top: 10px;
   text-transform: none;
-  font-size: 0.75em;
+  font-size: 0.65em;
   font-weight: normal;
   font-style: italic;
   font-family: "Playfair Display", serif;
@@ -423,10 +423,7 @@ nav a:focus {
 /* PROJECTS card list projects */
 .container .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-  max-width: 1200px;
-  margin: 0, auto;
-  padding: 20px;
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
@@ -503,10 +500,10 @@ nav a:focus {
   color: white;
 }
 
-@media (max-width: 1200px) {
-  .card-list .card-item {
-    padding: 15px;
-  }
+@media screen and (min-width: 640px) {
+.container .card-list {
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media screen and (max-width: 980px) {
@@ -888,18 +885,6 @@ main {
   border-top: none;
 }
 
-/* Style the close button */
-.topright {
-  float: right;
-  cursor: pointer;
-  font-size: 28px;
-}
-
-.topright:hover {
-  background-color: #7390f9;
-  color: white;
-}
-
 @media screen and (min-width: 640px) {
   .tab{
     grid-template-columns: repeat(6, 1fr); /* Two columns */
@@ -941,7 +926,7 @@ main {
 .testing {
   border: 4px solid #FFF5D1;
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
 }
 
@@ -963,7 +948,6 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  margin: 20px;
 }
 
 .grid-item-usability {
@@ -1109,19 +1093,30 @@ footer {
   padding-top: 20px;
 }
 
-/* Contact Form */
-
-
 /* work section*/
 #work-section .row {
   color: var(--grape);
 }
 
+
+.profilepic {
+  display: flex;
+  justify-content: center; 
+  align-items: center;      
+  height: 60%;   
+  padding-right: 24px;
+}
+
+
 /* about me page */
 .beatriz-img {
-  max-height: max-content;
-  object-fit: scale-down;
-  display: block;
+  max-width: 50%;
+  height: auto;
+}
+
+.right-align {
+  display: flex;
+  justify-content: center;
 }
 
 /* animation about me */
@@ -1193,6 +1188,17 @@ ins:after {
   }
 }
 
+/*MY WORK SITE*/
+.menuwork a {
+  color: #622786;  /* Example blue color */
+  text-decoration: none;  /* Remove the underline */
+  transition: color 0.3s;  /* Smooth color transition for hover effect */
+}
+
+.menuwork a:hover {
+  color: #0d478e;  /* Darker blue for hover state */
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -1255,6 +1261,17 @@ Medium devices (640px and larger)
     float: left;
   }
 
+  /* Column About me */
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+    align-items: center; /* Vertically align to the middle */
+    justify-content: center;
+  }
+
   .row-mywork::after {
     content: "";
     clear: both;
@@ -1293,15 +1310,10 @@ Medium devices (640px and larger)
 }
 
   /* About me page */
-  .about-story {
+  .container.about-story {
     display: flex;
-  }
-
-  .beatriz-img {
-    padding-right: 8px;
-    max-height: 400px;
-    padding-right: 30px;
-  }
+    align-items: stretch;  /* Ensures all direct children are the full height of the parent container */
+}
 
   .about-button {
     font-size: 18px;
@@ -1347,25 +1359,8 @@ Large devices (1024px or larger)
   }
 
   /* colums*/
-  .col-md-4 {
-    width: 33.33%;
-  }
-
   .col-md-6 p {
     max-width: 400px;
-  }
-
-  .col-md-8 {
-    width: 66.66%;
-  }
-
-  .flex-container-participants {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .paragraph-participant {
-    font-size: 16px;
-    text-align: center;
   }
 
   .iframe-container {
@@ -1379,10 +1374,6 @@ Large devices (1024px or larger)
 
   ul.role {
     margin-left: 10px;
-  }
-
-  .beatriz-img {
-    max-height: 360px;
   }
 
   .about-button {
@@ -1414,10 +1405,6 @@ X-large devices (1440px or larger)
   .paragraph-participant {
     font-size: 18px;
     text-align: left;
-  }
-
-  .beatriz-img {
-    max-height: 550px;
   }
 
   .button {
