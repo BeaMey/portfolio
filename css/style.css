@@ -1109,13 +1109,8 @@ footer {
 
 /* about me page */
 .beatriz-img {
-  max-width: 50%;
+  max-width: 150px;
   height: auto;
-}
-
-.right-align {
-  display: flex;
-  justify-content: center;
 }
 
 /* animation about me */
@@ -1316,6 +1311,10 @@ Medium devices (640px and larger)
 
   .about-button {
     font-size: 18px;
+  }
+
+  .beatriz-img {
+    max-width: 220px;
   }
 }
 
