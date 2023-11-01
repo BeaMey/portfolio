@@ -962,6 +962,13 @@ main {
   margin-top: 20px;
 }
 
+.about {
+  border: 5px solid var(--thistle);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
 /* Testing the solution */
 /* Base styles for grid items */
 .grid-container-usability {
@@ -1173,6 +1180,7 @@ footer {
 .beatriz-img {
   max-width: 150px;
   height: auto;
+  border-radius: 20px;
 }
 
 /* animation about me */
@@ -1377,6 +1385,7 @@ Medium devices (640px and larger)
 
   .beatriz-img {
     max-width: 240px;
+    max-width: auto;
   }
 
   .grid-container-marketing {
@@ -1386,6 +1395,7 @@ Medium devices (640px and larger)
 
   .market  {
    padding: 24px;
+   max-height: 427px;
   }
 }
 
@@ -1667,3 +1677,4 @@ Extra-large devices (1920px or larger)
   align-items: center;
   justify-content: center;
 }
+
