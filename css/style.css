@@ -1023,14 +1023,15 @@ main {
   float: right;
   cursor: pointer;
   font-size: 24px;
-  background-color: #7390f9;
+  background-color: #B4C4FE;
   color: white;
   width: 40px; /* Ancho del círculo */
   height: 40px; /* Altura del círculo */
   text-align: center; /* Para centrar el contenido */
   line-height: 40px; /* Para centrar verticalmente el contenido */
   border-radius: 50%; /* Forma de círculo */
-  margin-right: 10%;
+  margin-right: 5%;
+  margin-bottom: 8%;
 }
 
 .topright:hover {
