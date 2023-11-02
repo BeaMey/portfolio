@@ -81,19 +81,17 @@ h4 {
   color: var(--dark-purple);
 }
 
-.eight h2 {
+.eight h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 26px;
-  letter-spacing: 1px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 16px 0;
   grid-gap: 22px;
 }
 
-.eight h2:after,
-.eight h2:before {
+.eight h1:after,
+.eight h1:before {
   content: " ";
   display: block;
   border-bottom: 2px solid #ccc;
@@ -548,20 +546,6 @@ nav a:focus {
   margin-bottom: 20px;
 }
 
-@media (min-width: 1000px) {
-    .whatido {
-        display: flex;             
-        flex-wrap: wrap;           
-        justify-content: space-between;
-    }
-
-    .row-mywork {
-        flex: 1;  
-        max-width: 48%;
-        padding: 20px;
-    }
-}
-
 /* MAIN */
 main {
   padding-top: 108.8px;
@@ -581,9 +565,14 @@ main {
   border-radius: 2rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.h1-test {
+  text-align: center;
+}
+
 .h2-test {
   text-align: center;
 }
+
 .contents-wraper .testRow {
   width: 100%;
   min-height: inherit;
@@ -1337,12 +1326,6 @@ Medium devices (640px and larger)
     justify-content: center;
   }
 
-  .row-mywork::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
   [class*="col-"] {
     float: left;
   }
@@ -1351,10 +1334,6 @@ Medium devices (640px and larger)
     content: "";
     clear: both;
     display: table;
-  }
-
-  .row-mywork {
-    display: flex;
   }
 
   /* main */
@@ -1626,7 +1605,6 @@ Extra-large devices (1920px or larger)
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
-  animation: creativeDance 2s infinite;
 }
 
 /* contact */
@@ -1677,4 +1655,6 @@ Extra-large devices (1920px or larger)
   align-items: center;
   justify-content: center;
 }
+
+
 

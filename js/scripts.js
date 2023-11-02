@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 });
 
+// Time line slider
+
+
 // Testimonials slider
 let testSlide = document.querySelectorAll('.testItem');
 let dots = document.querySelectorAll('.dot');
