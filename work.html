@@ -70,12 +70,16 @@
     <div class="container" style="background-color: #d8e1fe; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
       <h1 style="text-align: left">My Work</h1>
       <p>Check my latest UX design Projects and the scope of my work:</p>
-      <a href="#UX" class="button-project">User Experience Design</a>
-      <a href="#marketing" class="button-project">Online Marketing</a>
+      <div class="container tab" id="process">
+        <button class="tablinks" onclick="openCity(event, 'uxr')" id="defaultOpen">UX Design</button>
+        <button class="tablinks" onclick="openCity(event, 'mark')">Online Marketing</button>
+      </div>
     </div>
 
+
+    <div id="uxr" class="tabcontent">
       <div class="container">
-        <h2 id="UX">UX Design</h2>
+        <h2 id="UXR">UX Design</h2>
         <div class="uxdesign">
           <p>For me, UX Design is where innovation and user-centricity converge to create exceptional user experiences.
           </p>
@@ -118,7 +122,9 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div id="mark">
       <div class="container">
         <h2 id="marketing">Online Marketing</h2>
         <div class="marketing">
@@ -162,6 +168,7 @@
 
         </div>
       </div>
+    </div>
 
       <div class="container testimonials" id="testimonials">
         <div class="eight">
