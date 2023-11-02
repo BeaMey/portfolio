@@ -1365,7 +1365,6 @@ Medium devices (640px and larger)
   /* GIF INDEX */
   #gif {
     width: 40%;
-    animation: float 3s infinite
   }
 
   @keyframes float {
