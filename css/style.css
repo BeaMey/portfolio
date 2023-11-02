@@ -834,40 +834,26 @@ main {
   gap: 10px
 }
 
-/* Style the buttons inside the tab */
+/* Base styles for the buttons inside the tab */
 .tab button {
   cursor: pointer;
   transition: 0.3s;
-  color: #7390f9;
+  color: #7390f9; /* Default text color */
   padding: 10px;
   border: 1px solid #7390f9;
   border-radius: 5px;
   text-align: center;
   margin-right: 10px;
   font-size: 1.2em;
-  margin-right: 10px; 
   background-color: white;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover  {
-  background-color: #7390f9;
-  color: white;
-}
-
-/* Create an active/current tablink class */
+.tab button:hover,
 .tab button.active {
-  color:white;
-  background-color: #7390f9;
-  padding: 10px;
-  border: 1px solid #7390f9;
-  border-radius: 5px;
-  text-align: center;
-  margin-right: 10px;
+  background-color: #7390f9; /* Button color on hover */
+  color: white; /* Text color on hover */
 }
- 
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -938,14 +924,14 @@ main {
 }
 
 .uxdesign {
-  border: 5px solid #D2F6F7;
+  border: 5px solid #d8e1fe;
   padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
 }
 
 .marketing {
-  border: 5px solid #FFF5D1;
+  border: 5px solid #D2F6F7;
   padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
