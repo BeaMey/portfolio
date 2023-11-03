@@ -354,7 +354,7 @@ nav a:focus {
 #hero-section h1 {
   margin: 0;
   padding-top: 0.67em;
-  text-align: left;
+  text-align: center;
 }
 
 #gif {
@@ -379,13 +379,6 @@ nav a:focus {
   word-spacing: 1px;
 }
 
-/* FLEX CONTAINER */
-.container.hero {
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-}
-
 /* FLEX ITEMS */
 .aboutme {
   padding: 10px;
@@ -400,9 +393,14 @@ nav a:focus {
     justify-content: space-between;
   }
 
+  /* FLEX CONTAINER */
+.container.hero {
+  display: flex;
+}
+
   .aboutme {
     flex-grow: 1;
-    padding-right: 20px;
+    padding-left: 20px;
   }
 
   #gif {
@@ -1464,11 +1462,6 @@ Large devices (1024px or larger)
 
   #hero-section {
     padding: 24px;
-  }
-
-  #hero-section h1 {
-    margin: 0px;
-    padding: 0.67em 0;
   }
 
   /* colums*/
