@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 });
 
-// Time line slider
-
-
 // Testimonials slider
 let testSlide = document.querySelectorAll('.testItem');
 let dots = document.querySelectorAll('.dot');
@@ -101,26 +98,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 // fin del código testimonio// 
-
-// MY WORK// 
-document.addEventListener('DOMContentLoaded', function() {
-    let images = document.querySelectorAll('.foto-item img');
-
-    images.forEach(image => {
-        image.addEventListener('click', function() {
-            let modal = document.createElement('div');
-            modal.innerHTML = `<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center;">
-                <img src="${this.src}" style="max-width: 90%; max-height: 90%;">
-            </div>`;
-            modal.addEventListener('click', function() {
-                modal.remove();
-            });
-
-            document.body.appendChild(modal);
-        });
-    });
-});
-
 // Table of contents
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
