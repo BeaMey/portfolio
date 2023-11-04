@@ -354,7 +354,7 @@ nav a:focus {
 #hero-section h1 {
   margin: 0;
   padding-top: 0.67em;
-  text-align: center;
+  text-align: left;
 }
 
 #gif {
@@ -377,6 +377,7 @@ nav a:focus {
   color: var(--dark-purple);
   letter-spacing: normal;
   word-spacing: 1px;
+  text-align: left;
 }
 
 /* FLEX ITEMS */
@@ -418,7 +419,7 @@ nav a:focus {
 
 .card-list .card-item {
   background: white;
-  padding: 26px;
+  padding: 24px;
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
   list-style: none;
@@ -966,14 +967,14 @@ main {
 
 .uxdesign {
   border: 5px solid #d8e1fe;
-  padding: 30px;
+  padding: 24px;
   border-radius: 20px;
   margin-top: 20px;
 }
 
 .marketing {
   border: 5px solid #D2F6F7;
-  padding: 30px;
+  padding: 24px;
   border-radius: 20px;
   margin-top: 20px;
 }
@@ -1354,7 +1355,7 @@ Medium devices (640px and larger)
   .hero-section span {
     display: block;
   }
-
+  
   /* colums index*/
   .col-md-6 {
     width: 50%;
@@ -1823,3 +1824,6 @@ Extra-large devices (1920px or larger)
     /* Adjust margin for smaller screens */
   }
 }
+
+
+
