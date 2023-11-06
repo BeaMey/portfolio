@@ -74,6 +74,15 @@ h3 {
   text-align: center;
 }
 
+.h3about {
+  background-color: transparent;
+  text-align: left;
+}
+
+.h3timeline {
+  background-color: transparent;
+}
+
 h4 {
   font-size: 1.1em;
   font-weight: 450;
@@ -1029,7 +1038,7 @@ main {
 }
 
 .time {
-  border: 2px solid var(--palepurple);
+  border: 2px solid var(--tomate);
   padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
@@ -1646,53 +1655,6 @@ Extra-large devices (1920px or larger)
   display: inline-block;
 }
 
-@keyframes creativeDance {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0%);
-  }
-
-  40% {
-    transform: translateY(-10%);
-  }
-
-  60% {
-    transform: translateY(5%);
-  }
-}
-
-@keyframes creativeDance {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0%);
-  }
-
-  40% {
-    transform: translateY(-10%);
-  }
-
-  60% {
-    transform: translateY(5%);
-  }
-}
-
-.creative-dance {
-  background: linear-gradient(45deg, #d30669, #047150, #d30669);
-  /* Adjusted colors for contrast */
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
-}
-
 /* contact */
 .circle-wrapper {
   position: relative;
@@ -1742,8 +1704,7 @@ Extra-large devices (1920px or larger)
   justify-content: center;
 }
 
-
-/* Timeline Styling */
+/* timeline */
 .timeline {
   position: relative;
   padding: 0;
@@ -1755,10 +1716,10 @@ Extra-large devices (1920px or larger)
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40px;
+  left: 40px; /* Adjust this value if needed */
   width: 2px;
-  margin-left: -1.5px;
-  background-color: var(--palepurple);
+  margin-left: -1px; /* This centers the line if it's an even number of pixels wide */
+  background-color: var(--melon); /* Timeline line color */
 }
 
 .timeline-event {
@@ -1766,80 +1727,62 @@ Extra-large devices (1920px or larger)
   position: relative;
 }
 
-.timeline-event:last-child {
-  margin-bottom: 0;
-}
-
 .timeline-event-icon {
-  background-color: var(--palepurple);
   display: block;
-  width: 20px;
-  height: 20px;
   position: absolute;
-  left: 31px;
+  left: 20px; /* Aligns with the timeline line */
   top: 0;
+  width: 40px; /* Icon size */
+  height: 40px; /* Icon size */
   border-radius: 50%;
-  z-index: 100;
+  background-color: #F2F2F2; /* Icon background color */
+  text-align: center;
+  line-height: 40px; /* Adjusts the line height to vertically center text/icon if needed */
+  font-size: 16px; /* Icon text size */
 }
 
 .timeline-event-copy {
   padding: 15px;
-  padding-left: 80px;
-  /* Adjust padding to not overlap the timeline axis */
-  margin-right: 30px;
-  /* Added right margin to ensure text doesn't touch the edge of the container */
-  position: relative;
-  top: -10px;
+  padding-left: 80px; /* Make sure this is enough to not overlap the icon */
   background-color: white;
+  position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 20px;
 }
 
 .timeline-event-thumbnail {
-  margin: 0;
-  color: #888;
-  margin-bottom: 5px;
+  color: #757575;
   font-weight: bold;
-}
-
-.timeline-event h3 {
-  margin-top: 0;
-  color: black;
+  margin-bottom: 5px;
 }
 
 .timeline-event p {
   margin-bottom: 0;
 }
 
-.timeline-event p+h3 {
+.timeline-event p + h4 {
   margin-top: 10px;
 }
 
 .timeline-event-copy a {
-  font-size: 0.9em;
-  /* Adjust the size as needed */
+  color: var(--tomate); /* Link color */
   text-decoration: none;
-  /* Optional: removes underline from links */
 }
 
 .timeline-event-copy a:hover {
   text-decoration: underline;
-  /* Optional: adds underline on hover for better UX */
 }
 
-/* Add responsive design */
 @media (max-width: 767px) {
   .timeline:before {
     left: 20px;
   }
 
   .timeline-event-icon {
-    left: -8px;
+    left: 0;
   }
 
   .timeline-event-copy {
-    padding-left: 20px;
-    margin-right: 15px;
-    /* Adjust margin for smaller screens */
+    padding-left: 60px; /* Adjust this as per the icon size + padding */
   }
 }
