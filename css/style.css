@@ -870,7 +870,7 @@ main {
 .aboutapp {
   padding: 20px;
   border-radius: 20px;
-  border: 4px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
 }
 
 .theproblem {
@@ -887,7 +887,7 @@ main {
 .projectdetail {
   padding: 20px;
   border-radius: 20px;
-  border: 4px solid #ECF0FF;
+  border: 2px solid #ECF0FF;
   flex: 0 50%;
   display: flex;
   /* Asegura que "projectdetail" se expanda completamente en altura */
@@ -923,9 +923,9 @@ main {
 .tab button {
   cursor: pointer;
   transition: 0.3s;
-  color: #7390f9;
+  color: var(--caribeancurrent);
   padding: 10px;
-  border: 1px solid #7390f9;
+  border: 1px solid var(--tiffanyblue);
   border-radius: 5px;
   text-align: center;
   margin-right: 10px;
@@ -936,16 +936,16 @@ main {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #7390f9;
+  background-color: var(--caribeancurrent);
   color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
   color: white;
-  background-color: #7390f9;
+  background-color: var(--caribeancurrent);
   padding: 10px;
-  border: 1px solid #7390f9;
+  border: 1px solid var(--caribeancurrent);
   border-radius: 5px;
   text-align: center;
   margin-right: 10px;
@@ -967,7 +967,7 @@ main {
 
 /* Case Study */
 .userresearch {
-  background-color: #d8e1fe;
+  border: 2px solid var(--magnolia);
   padding: 30px;
   border-radius: 20px;
 }
@@ -980,63 +980,63 @@ main {
 }
 
 .solution {
-  background-color: #D2F6F7;
+  border: 2px solid var(--tiffanyblue);
   padding: 30px;
   border-radius: 20px;
 }
 
 .identifying {
-  background-color: #FFF5D1;
+  border: 2px solid var(--yellow-bus);
   padding: 30px;
   border-radius: 20px;
 }
 
 .prototype {
-  border: 8px solid #d8e1fe;
+  border: 2px solid var(--magnolia);
   padding: 30px;
   border-radius: 20px;
 }
 
 .testing {
-  border: 4px solid #FFF5D1;
+  border: 2px solid var(--yellow-bus);
   background-color: white;
   padding: 20px;
   border-radius: 20px;
 }
 
 .results {
-  border: 2px solid #d8e1fe;
+  border: 2px solid var(--magnolia);
   padding: 30px;
   border-radius: 20px;
 }
 
 .conclusion {
-  background-color: #D2F6F7;
+  border: 2px solid var(--tiffanyblue);
   padding: 30px;
   border-radius: 20px;
 }
 
 .uxdesign {
-  border: 3px solid white;
+  border: 2px solid white;
   padding: 24px;
   border-radius: 20px;
 }
 
 .marketing {
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 20px;
   margin-top: 16px;
 }
 
 .time {
-  border: 3px solid var(--palepurple);
+  border: 2px solid var(--palepurple);
   padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
 }
 
 .about {
-  border: 5px solid var(--palepurple);
+  border: 2px solid var(--palepurple);
   padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
@@ -1097,8 +1097,8 @@ main {
   float: right;
   cursor: pointer;
   font-size: 24px;
-  background-color: #B4C4FE;
-  color: white;
+  background-color: var(--midnightgreen);
+  color: var(--tiffanyblue);
   width: 40px;
   height: 40px;
   text-align: center;
@@ -1109,8 +1109,8 @@ main {
 }
 
 .topright:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--tiffanyblue);
+  color: var(--midnightgreen);
 }
 
 .grid-participant {
@@ -1172,7 +1172,7 @@ summary {
 
 .card {
   position: relative;
-  border: solid 5px var(--palepurple);
+  border: solid 3px var(--periwinkle);
   padding: 45px 50px 25px 60px;
   background-color: white;
   border-radius: 10px;
@@ -1581,8 +1581,7 @@ Extra-large devices (1920px or larger)
 /* Estilo para case study "Untangled" */
 /* Portada untangled*/
 .container.intro {
-  background: linear-gradient(to bottom, #efdeff, #d8e1fe, #BDE1E2);
-  color: #fff;
+  background: linear-gradient(to bottom, #F0F0FF, #CCCCFF, #97DEC9);
   text-align: center;
   border: 20px solid #fff;
   border-radius: 30px;
@@ -1623,6 +1622,7 @@ Extra-large devices (1920px or larger)
   margin-top: 12px;
   font-size: 1.4rem;
   font-weight: 700;
+  color: var(--barnred);
 }
 
 /* My slogan */
