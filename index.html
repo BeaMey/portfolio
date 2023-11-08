@@ -96,16 +96,21 @@
       </div>
     </div>
 
-      <section id="work">
-        <div class="eight">
-          <h2 class="h2-test">What I do</h2>
-        </div>
+    <section id="work">
+      <div class="eight">
+        <h2 class="h2-test">What I do</h2>
+      </div>
+      <div class="tab1 container">
+        <button class="tablinks active" onclick="openCity(event, 'uxdesign')">UX Design</button>
+        <button class="tablinks" onclick="openCity(event, 'onlinemarketing')">Online Marketing</button>
+      </div>
 
+      <div id="uxdesign" class="tabcontent" style="display:block;">
         <div class="container uxdesign">
-          <h3>UX Design</h3>
-          <p>Take a look at my most recent projects:</p>
+          <p>Take a look at my most recent User Experience Design Projects:</p>
           <div class="container card-list">
             <a href="untangled.app.html" class="card-item">
+              <h4>Untangled, the Legal App for Entrepreneurs</h4>
               <picture>
                 <source srcset="img/untangled/presentation/@1app.photo.png">
                 <img src="img/untangled/presentation/@2app.photo.png" alt="Untangled Project Card Image"
@@ -113,7 +118,6 @@
               </picture>
               <span class="developer">Ux Researcher</span>
               <span class="developer">Ux Designer</span>
-              <h4>Untangled, the Legal App for Entrepreneurs</h4>
               <p>Spearheaded the development of a legal-tech mobile app. Engaged in user research, competitive
                 analysis, wireframing, prototyping, and usability testing to simplify legal processes for entrepreneurs.
               </p>
@@ -124,9 +128,9 @@
             </a>
 
             <a href="germanpro.html" class="card-item">
-              <span class="designer">Ux Researcher</span>
-              <h4>Coming soon</h4>
               <h4>German ProApp, a Language Learning App</h4>
+              <h5>Coming soon</h5>
+              <span class="designer">Ux Researcher</span>
               <p>Development of an app that addresses the needs and frustrations of individuals interested in
                 mastering the German language.</p>
               <p><b>Tools Used</b>: Marvel App, Optimal Workshop, Helio, Miro, Canva, and Survey Monkey.</p>
@@ -136,10 +140,10 @@
             </a>
           </div>
         </div>
+      </div>
 
-
+      <div id="onlinemarketing" class="tabcontent">
         <div class="container marketing">
-          <h3>Online Marketing</h3>
           <p>Harnessing data-driven insights, I craft relevant and helpful content tailored to resonate with your
             audience. Expertise lies in Research, Content Strategy, and SEO-optimized content across various
             digital
@@ -189,106 +193,107 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
-      <section id="testimonials">
-        <div class="container testimonials">
-          <div class="eight">
-            <h2 class="h2-test">Testimonials</h2>
-          </div>
-          <div class="contents-wraper">
-            <div class="testRow">
+    <section id="testimonials">
+      <div class="container testimonials">
+        <div class="eight">
+          <h2 class="h2-test">Testimonials</h2>
+        </div>
+        <div class="contents-wraper">
+          <div class="testRow">
 
-              <div class="testItem active">
-                <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
-                <p>
-                  I was lucky to have Beatriz in my team. She managed the Spanish content on our website, coming up with
-                  her
-                  own ideas to improve the customer experience. Her work resulted in a significant improvement in the
-                  visibility of our Spanish website and in reaching more customers from Spanish-speaking countries. I
-                  fondly
-                  remember Beatriz's outgoing, helpful and friendly nature, which was an excellent fit for our team. I
-                  was
-                  impressed by her focused and structured way of working, which did not lack to bring own ideas into the
-                  implementation of projects. Beatriz was an enrichment for our team and will be for every other team
-                  with
-                  her excellent and motivated working style.
-                </p>
-                <div class="details">
-                  <span class="name">Anja Brauer</span>
-                  <span class="job">Senior Content Manager, IFS Management</span>
-                </div>
+            <div class="testItem active">
+              <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
+              <p>
+                I was lucky to have Beatriz in my team. She managed the Spanish content on our website, coming up with
+                her
+                own ideas to improve the customer experience. Her work resulted in a significant improvement in the
+                visibility of our Spanish website and in reaching more customers from Spanish-speaking countries. I
+                fondly
+                remember Beatriz's outgoing, helpful and friendly nature, which was an excellent fit for our team. I
+                was
+                impressed by her focused and structured way of working, which did not lack to bring own ideas into the
+                implementation of projects. Beatriz was an enrichment for our team and will be for every other team
+                with
+                her excellent and motivated working style.
+              </p>
+              <div class="details">
+                <span class="name">Anja Brauer</span>
+                <span class="job">Senior Content Manager, IFS Management</span>
               </div>
-
-              <div class="testItem">
-                <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
-                <p>
-                  Beatriz' work is absolutely fantastic. I worked as a researcher at Chambers and Partners and I can
-                  confidently say that her skills in submission's writing are outstanding. She's is organised, timely
-                  and
-                  creative when it comes to research to get information to fill in complex practice area submissions.
-                  Beatriz is highly proficient in digital marketing for Law firms and also an excellent content writer,
-                  as
-                  shown in the work she's done for several Law Firms that are quite happy with her article and blog
-                  writing.
-                  Finally, I can say Beatriz is a fantastic team mate that goes always the extra mile to satisfy
-                  client's
-                  and colleagues requirements when needed...
-                </p>
-                <div class="details">
-                  <span class="name">Patricio Espinoza</span>
-                  <span class="job">Legal Researcher and Policy Advisor</span>
-                </div>
-              </div>
-
-              <div class="testItem">
-                <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
-                <p>
-                  I'm super proud of you for your hard work and dedication and your truly awesome project (<a
-                    href="untangled.app.html">Untangled, Legal App</a>). This will be the
-                  base for an amazing portfolio that will help you get your design career started, I'm sure.
-                </p>
-                <div class="details">
-                  <span class="name">Oz Richter</span>
-                  <span class="job">Mentor at Career Foundry</span>
-                </div>
-              </div>
-
-              <div class="testItem">
-                <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
-                <p>
-                  ...The results speak for themselves. Beatriz's great work has drastically increased the number of
-                  Spanish keywords and significantly increased the number of website visitors from Spanish-speaking
-                  countries.
-                  Hiring her was one of the best steps for our growth in Spanish-speaking countries! Beatriz is a great,
-                  helpful person (absolute team player). Someone that you definitely want to have in your team.
-                </p>
-                <div class="details">
-                  <span class="name">Lukas Blasberg</span>
-                  <span class="job">Co-Founder and CEO, Lumiform</span>
-                </div>
-              </div>
-
             </div>
 
-            <section class="indicators">
-              <div class="dot active" attr="0" onclick="switchTest(this)"></div>
-              <div class="dot" attr="1" onclick="switchTest(this)"></div>
-              <div class="dot" attr="2" onclick="switchTest(this)"></div>
-              <div class="dot" attr="3" onclick="switchTest(this)"></div>
-            </section>
+            <div class="testItem">
+              <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
+              <p>
+                Beatriz' work is absolutely fantastic. I worked as a researcher at Chambers and Partners and I can
+                confidently say that her skills in submission's writing are outstanding. She's is organised, timely
+                and
+                creative when it comes to research to get information to fill in complex practice area submissions.
+                Beatriz is highly proficient in digital marketing for Law firms and also an excellent content writer,
+                as
+                shown in the work she's done for several Law Firms that are quite happy with her article and blog
+                writing.
+                Finally, I can say Beatriz is a fantastic team mate that goes always the extra mile to satisfy
+                client's
+                and colleagues requirements when needed...
+              </p>
+              <div class="details">
+                <span class="name">Patricio Espinoza</span>
+                <span class="job">Legal Researcher and Policy Advisor</span>
+              </div>
+            </div>
+
+            <div class="testItem">
+              <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
+              <p>
+                I'm super proud of you for your hard work and dedication and your truly awesome project (<a
+                  href="untangled.app.html">Untangled, Legal App</a>). This will be the
+                base for an amazing portfolio that will help you get your design career started, I'm sure.
+              </p>
+              <div class="details">
+                <span class="name">Oz Richter</span>
+                <span class="job">Mentor at Career Foundry</span>
+              </div>
+            </div>
+
+            <div class="testItem">
+              <div class="icon"><img src="img/about/@1testimonial.png" alt="testimonials"></div>
+              <p>
+                ...The results speak for themselves. Beatriz's great work has drastically increased the number of
+                Spanish keywords and significantly increased the number of website visitors from Spanish-speaking
+                countries.
+                Hiring her was one of the best steps for our growth in Spanish-speaking countries! Beatriz is a great,
+                helpful person (absolute team player). Someone that you definitely want to have in your team.
+              </p>
+              <div class="details">
+                <span class="name">Lukas Blasberg</span>
+                <span class="job">Co-Founder and CEO, Lumiform</span>
+              </div>
+            </div>
 
           </div>
+
+          <section class="indicators">
+            <div class="dot active" attr="0" onclick="switchTest(this)"></div>
+            <div class="dot" attr="1" onclick="switchTest(this)"></div>
+            <div class="dot" attr="2" onclick="switchTest(this)"></div>
+            <div class="dot" attr="3" onclick="switchTest(this)"></div>
+          </section>
+
         </div>
-      </section>
+      </div>
+    </section>
   </main>
 
   <footer class="center" id="contact">
     <div class="container">
       <div>
         <div class="eight">
-          <h2 class="h2-test">🤙🏼 Let's connect!</h2>
+          <h2 class="h2-test">Let's connect!</h2>
         </div>
         <br>
         <p>I am always eager to expand my circle!</p>

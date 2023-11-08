@@ -68,10 +68,8 @@ h3 {
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
   color: var(--barnred);
-  background-color: var(--melon);
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 12px;
-  text-align: center;
 }
 
 .h3about {
@@ -401,14 +399,15 @@ nav a:focus {
   letter-spacing: normal;
   word-spacing: 1px;
   text-align: left;
-  -webkit-text-stroke: 0; }
+  -webkit-text-stroke: 0;
+}
 
-  /* Animation for ins elements within the h1 with class "hero-section h1" */
+/* Animation for ins elements within the h1 with class "hero-section h1" */
 .hero-section.h1 ins {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  z-index: 2; /* Make sure the text is above the pseudo-element */
+  z-index: 2;
 }
 
 /* Pseudo-element for ins tags */
@@ -419,7 +418,7 @@ nav a:focus {
   left: 0;
   width: 0;
   height: 90%;
-  background: var(--melon);
+  background: var(--tiffanyblue);
   z-index: -1;
   animation: ins-animation 1s ease-out 0.8s forwards;
   border-radius: 8px;
@@ -431,6 +430,7 @@ nav a:focus {
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
@@ -439,7 +439,8 @@ nav a:focus {
 .aboutme ins {
   font-weight: 500;
   font-size: 1.2em;
-  background: -webkit-linear-gradient(#36013F, #103D3D); /* Gradient from yellow to orange */
+  background: -webkit-linear-gradient(#36013F, #103D3D);
+  /* Gradient from yellow to orange */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
@@ -967,6 +968,42 @@ main {
   border-top: none;
 }
 
+/* Style the buttons tab1 */
+.tab1 {
+  display: grid;
+  align-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px
+}
+
+.tablinks {
+  background-color: transparent;
+  color: var(--barnred);
+  border: 1px solid var(--melon); /* Corrected line */
+  float: left;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Playfair Display", sans-serif;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color: var(--melon);
+  border: none;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+  background-color: var(--melon);
+  border: none;
+}
+
 @media screen and (min-width: 640px) {
   .tab {
     grid-template-columns: repeat(3, 1fr);
@@ -1261,6 +1298,9 @@ footer {
   max-width: 150px;
   height: auto;
   border-radius: 20px;
+  display: block;
+  margin: auto;
+  object-fit: contain;
 }
 
 /* animation about me */
@@ -1366,15 +1406,15 @@ Medium devices (640px and larger)
 
   nav a:hover,
   nav a:focus {
-  color: var(--russianviolet);
-  font-family: "Libre Baskerville", sans-serif;
-  text-decoration: none;
-  font-size: 1.05em;
-  background-color: var(--melon);
-  padding: 0.1em 0.2em;
-  box-decoration-break: clone;
-  border-radius: 0.2em;
-}
+    color: var(--russianviolet);
+    font-family: "Libre Baskerville", sans-serif;
+    text-decoration: none;
+    font-size: 1.05em;
+    background-color: var(--melon);
+    padding: 0.1em 0.2em;
+    box-decoration-break: clone;
+    border-radius: 0.2em;
+  }
 
   .logo {
     max-width: 190px;
@@ -1451,8 +1491,7 @@ Medium devices (640px and larger)
   }
 
   .beatriz-img {
-    max-width: 240px;
-    max-width: auto;
+    max-width: 300px;
   }
 
   .grid-container-marketing {
@@ -1716,10 +1755,13 @@ Extra-large devices (1920px or larger)
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40px; /* Adjust this value if needed */
+  left: 40px;
+  /* Adjust this value if needed */
   width: 2px;
-  margin-left: -1px; /* This centers the line if it's an even number of pixels wide */
-  background-color: var(--melon); /* Timeline line color */
+  margin-left: -1px;
+  /* This centers the line if it's an even number of pixels wide */
+  background-color: var(--melon);
+  /* Timeline line color */
 }
 
 .timeline-event {
@@ -1730,20 +1772,27 @@ Extra-large devices (1920px or larger)
 .timeline-event-icon {
   display: block;
   position: absolute;
-  left: 20px; /* Aligns with the timeline line */
+  left: 20px;
+  /* Aligns with the timeline line */
   top: 0;
-  width: 40px; /* Icon size */
-  height: 40px; /* Icon size */
+  width: 40px;
+  /* Icon size */
+  height: 40px;
+  /* Icon size */
   border-radius: 50%;
-  background-color: #F2F2F2; /* Icon background color */
+  background-color: #F2F2F2;
+  /* Icon background color */
   text-align: center;
-  line-height: 40px; /* Adjusts the line height to vertically center text/icon if needed */
-  font-size: 16px; /* Icon text size */
+  line-height: 40px;
+  /* Adjusts the line height to vertically center text/icon if needed */
+  font-size: 16px;
+  /* Icon text size */
 }
 
 .timeline-event-copy {
   padding: 15px;
-  padding-left: 80px; /* Make sure this is enough to not overlap the icon */
+  padding-left: 80px;
+  /* Make sure this is enough to not overlap the icon */
   background-color: white;
   position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -1760,12 +1809,13 @@ Extra-large devices (1920px or larger)
   margin-bottom: 0;
 }
 
-.timeline-event p + h4 {
+.timeline-event p+h4 {
   margin-top: 10px;
 }
 
 .timeline-event-copy a {
-  color: var(--tomate); /* Link color */
+  color: var(--tomate);
+  /* Link color */
   text-decoration: none;
 }
 
@@ -1783,6 +1833,7 @@ Extra-large devices (1920px or larger)
   }
 
   .timeline-event-copy {
-    padding-left: 60px; /* Adjust this as per the icon size + padding */
+    padding-left: 60px;
+    /* Adjust this as per the icon size + padding */
   }
 }
