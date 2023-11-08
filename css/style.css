@@ -1038,7 +1038,7 @@ main {
 }
 
 .time {
-  border: 2px solid var(--tomate);
+  border: 2px solid var(--tiffanyblue);
   padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
@@ -1629,9 +1629,9 @@ Extra-large devices (1920px or larger)
 .intro span {
   display: inline-block;
   margin-top: 12px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: var(--barnred);
+  color: var(--gray);
 }
 
 /* My slogan */
