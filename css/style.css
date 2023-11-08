@@ -13,10 +13,9 @@ html {
 :root {
   --periwinkle: #CCCCFF;
   --magnolia: #F0F0FF;
-  --mintgreen: #CCFFFF;
+  --mintgreen: #ACE6D5;
   --gray: #777780;
   --coral: #FC8264;
-  --tomate: #FF643E;
   --barnred: #771A03;
   --tiffanyblue: #97DEC9;
   --caribeancurrent: #1A6463;
@@ -145,7 +144,7 @@ h4 {
 .button:active {
   text-decoration: none;
   opacity: 0.8;
-  background-color: white;
+  background-color: var(--mintgreen);
   border: 1px solid var(--tiffanyblue);
   color: var(--caribeancurrent);
   font-weight: 600;
@@ -156,7 +155,7 @@ h4 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--periwinkle);
+  background-color: var(--mintgreen);
   color: var(--black);
   font-weight: 800;
   font-size: 20px;
@@ -175,9 +174,33 @@ h4 {
   text-decoration: none;
   opacity: 0.8;
   background-color: black;
-  color: var(--melon);
+  color: var(--mintgreen);
   text-decoration: none;
-  border-color: var(--russianviolet);
+  border-color: var(--caribeancurrent);
+}
+
+.terciarybutton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--caribeancurrent);
+  font-weight: 500;
+  font-size: 1.1em;
+  height: 40px;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, background-color 0.2s;
+  transition-property: opacity;
+  padding-right: 40px;
+}
+
+.terciarybutton:hover,
+.terciarybutton:active {
+  text-decoration: none;
+  opacity: 0.8;
+  background-color: white;
+  color: var(--caribeancurrent);
+  font-weight: 600;
 }
 
 /* Link Styles */
@@ -352,7 +375,7 @@ nav a:hover,
 nav a:focus {
   color: var(--russianviolet);
   font-family: "Libre Baskerville", sans-serif;
-  text-decoration: underline var(--melon);
+  text-decoration: underline var(--magnolia);
   font-size: 1.05em;
   background-color: transparent;
   padding: 0.1em 0.2em;
@@ -374,7 +397,7 @@ nav a:focus {
   padding-top: 0.67em;
   text-align: left;
   color: var(--caribeancurrent);
-  -webkit-text-stroke: 0.5px var(--tiffanyblue);
+  -webkit-text-stroke: 0.5px var(--mintgreen);
 }
 
 #gif {
@@ -418,7 +441,7 @@ nav a:focus {
   left: 0;
   width: 0;
   height: 90%;
-  background: var(--tiffanyblue);
+  background: var(--mintgreen);
   z-index: -1;
   animation: ins-animation 1s ease-out 0.8s forwards;
   border-radius: 8px;
@@ -708,7 +731,7 @@ main {
 }
 
 .contents-wraper .indicators .active {
-  background-color: var(--melon);
+  background-color: var(--mintgreen);
 }
 
 @keyframes next1 {
@@ -778,7 +801,7 @@ main {
 .germanapp {
   padding: 20px;
   border-radius: 20px;
-  background-color: #ff720e;
+  background-color: var(--coral);
 }
 
 .germanapp p {
@@ -978,8 +1001,8 @@ main {
 
 .tablinks {
   background-color: transparent;
-  color: var(--barnred);
-  border: 1px solid var(--melon); /* Corrected line */
+  color: var(--russianviolet);
+  border: 2.5px solid var(--magnolia); /* Corrected line */
   float: left;
   outline: none;
   cursor: pointer;
@@ -987,20 +1010,20 @@ main {
   font-size: 1.5em;
   font-weight: 500;
   font-family: "Playfair Display", sans-serif;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 12px;
   text-align: center;
 }
 
 /* Change background color of buttons on hover */
 .tablinks:hover {
-  background-color: var(--melon);
+  background-color: var(--magnolia);
   border: none;
 }
 
 /* Create an active/current tablink class */
 .tablinks.active {
-  background-color: var(--melon);
+  background-color: var(--magnolia);
   border: none;
 }
 
@@ -1318,7 +1341,7 @@ del:after {
   left: 0;
   width: 100%;
   height: calc(50%);
-  border-top: 1.5px solid var(--tomate);
+  border-top: 1.5px solid var(--coral);
   transform: rotateZ(-5deg);
   animation: del 0.9s ease-in;
 }
@@ -1410,7 +1433,7 @@ Medium devices (640px and larger)
     font-family: "Libre Baskerville", sans-serif;
     text-decoration: none;
     font-size: 1.05em;
-    background-color: var(--melon);
+    background-color: var(--magnolia);
     padding: 0.1em 0.2em;
     box-decoration-break: clone;
     border-radius: 0.2em;
@@ -1614,7 +1637,7 @@ Extra-large devices (1920px or larger)
 }
 
 .container.german h1 {
-  color: var(--tomate);
+  color: var(--coral);
 }
 
 .container.german a {
@@ -1741,99 +1764,4 @@ Extra-large devices (1920px or larger)
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* timeline */
-.timeline {
-  position: relative;
-  padding: 0;
-  list-style: none;
-}
-
-.timeline:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 40px;
-  /* Adjust this value if needed */
-  width: 2px;
-  margin-left: -1px;
-  /* This centers the line if it's an even number of pixels wide */
-  background-color: var(--melon);
-  /* Timeline line color */
-}
-
-.timeline-event {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.timeline-event-icon {
-  display: block;
-  position: absolute;
-  left: 20px;
-  /* Aligns with the timeline line */
-  top: 0;
-  width: 40px;
-  /* Icon size */
-  height: 40px;
-  /* Icon size */
-  border-radius: 50%;
-  background-color: #F2F2F2;
-  /* Icon background color */
-  text-align: center;
-  line-height: 40px;
-  /* Adjusts the line height to vertically center text/icon if needed */
-  font-size: 16px;
-  /* Icon text size */
-}
-
-.timeline-event-copy {
-  padding: 15px;
-  padding-left: 80px;
-  /* Make sure this is enough to not overlap the icon */
-  background-color: white;
-  position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-}
-
-.timeline-event-thumbnail {
-  color: #757575;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.timeline-event p {
-  margin-bottom: 0;
-}
-
-.timeline-event p+h4 {
-  margin-top: 10px;
-}
-
-.timeline-event-copy a {
-  color: var(--tomate);
-  /* Link color */
-  text-decoration: none;
-}
-
-.timeline-event-copy a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 767px) {
-  .timeline:before {
-    left: 20px;
-  }
-
-  .timeline-event-icon {
-    left: 0;
-  }
-
-  .timeline-event-copy {
-    padding-left: 60px;
-    /* Adjust this as per the icon size + padding */
-  }
 }
