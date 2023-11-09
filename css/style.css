@@ -991,18 +991,18 @@ main {
   border-top: none;
 }
 
-/* Style the buttons tab1 */
-.tab1 {
+/* Style the buttons topnav */
+.topnav {
   display: grid;
   align-content: space-evenly;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px
+  gap: 0px;
 }
 
 .tablinks {
   background-color: transparent;
   color: var(--russianviolet);
-  border: 2.5px solid var(--magnolia); /* Corrected line */
+  border: 1.5px solid var(--magnolia); /* Corrected line */
   float: left;
   outline: none;
   cursor: pointer;
@@ -1010,15 +1010,14 @@ main {
   font-size: 1.5em;
   font-weight: 500;
   font-family: "Playfair Display", sans-serif;
-  border-radius: 10px;
-  padding: 12px;
+  padding: 14px 16px;
   text-align: center;
 }
 
 /* Change background color of buttons on hover */
 .tablinks:hover {
   background-color: var(--magnolia);
-  border: none;
+  border: 1.5px solid var(--periwinkle);
 }
 
 /* Create an active/current tablink class */
@@ -1149,12 +1148,6 @@ main {
   }
 }
 
-/* dddfss */
-.zoom-container {
-  padding: 30px 0;
-  /* 20px top and bottom, 0 left and right */
-}
-
 .wireframes img {
   max-width: 80%;
   height: auto;
@@ -1224,7 +1217,7 @@ main {
 
 /* My Role */
 summary {
-  border: 1px solid #000;
+  border: 1px solid var(--gray);
   padding: .75em 1em;
   padding-left: 1em;
   cursor: pointer;
