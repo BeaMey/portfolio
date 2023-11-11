@@ -200,23 +200,20 @@
             <p>Surveys offered initial user insights; in-depth interviews explored user preferences and needs.</p>
             <p>Interviews spanned entrepreneurs aged 28 to 54, reflecting Ecuador's typical entrepreneur age group, with
               five interviews conducted.</p>
-            <h4>Summary of the 9 key findings</h4>
+            <h4>Summary of the 8 key findings</h4>
             <ol>
-              <li>The competitive analysis targets key app features but overlooks specific needs like tracking
-                regulatory updates crucial for Ecuadorian entrepreneurs.
+              <li>Desired app features encompass lawyer consultations, document templates, reminders, in-app
+                payments, regulatory updates, FAQs, and real-time guidance.</li>
+              <li>Interviewees prioritize payment transparency, flexible payment options, and good customer service.
               </li>
               <li>People typically seek advice from their trusted network for basic legal matters but are open to using
                 legal apps.</li>
-              <li>Desired app features encompass FAQs, lawyer consultations, document templates, reminders, in-app
-                payments, and real-time guidance.</li>
-              <li>Interviewees prioritize payment transparency, flexible payment options, and good customer service.
-              </li>
+              <li>Full-time entrepreneurs require comprehensive legal support, especially in areas like tax, labor, and
+                intellectual property protection.</li>
+              <li>For tax-related legal matters, nearly all users turn to their accountants.</li>
               <li>Common legal needs include model contracts, notary proceedings, affidavits, deeds, and intellectual
                 property protection.</li>
               <li>Some individuals stay informed about legal changes through news sources and social media.</li>
-              <li>For tax-related legal matters, nearly all users turn to their accountants.</li>
-              <li>Full-time entrepreneurs require comprehensive legal support, especially in areas like tax, labor, and
-                intellectual property protection.</li>
               <li>Most interviewees need a lawyer several times a year.</li>
             </ol>
           </div>
@@ -232,13 +229,14 @@
           <p>During the Empathize phase, insights were consolidated and analyzed to identify core issues, leading to the
             creation of a problem statement:</p>
           <h3>Problem Statement</h3>
-          <p><span class="features">Entrepreneurs face difficulties in obtaining timely, reliable, and affordable legal
+          <blockquote><span class="features">Entrepreneurs face difficulties in obtaining timely, reliable, and
+              affordable legal
               services
               to safeguard their business interests. In response, a web application was developed to offer
               cost-effective, easy access to
               trustworthy legal advice and information, enabling entrepreneurs to address common legal questions
               efficiently, saving time
-              and money.</span></p>
+              and money.</span></blockquote>
           <p>Subsequently, to humanize the design process, personas were developed as the focus shifted to the Ideation
             phase.
           </p>
@@ -303,8 +301,8 @@
             which helps optimize the structure of websites and apps.
           </p>
           <picture>
-            <source srcset="img/untangled/@2card.png" class="centered">
-            <img src="img/untangled/@3card.png" alt="Card Sorting Methodology" style="width: 100%; padding: 8px;">
+            <source srcset="img/untangled/@2card.png" class="centered-picture1">
+            <img src="img/untangled/@3card.png" alt="Card Sorting Methodology" class="centered-picture1">
           </picture>
           <p>The open card sorting exercise provided key insights:</p>
           <ol>
@@ -338,52 +336,63 @@
       <div class="container">
         <h2>Prototyping Solutions</h2>
         <div class="prototype">
-          <p>Adjustments were made to the site map to adapt it to users' understanding and expectations of the legal
-            services, which made it possible to organize the contents in a simpler way. For example, the number of
-            categories was reduced, and as a result the application became more navigable and easier for users to
-            understand.
-          </p>
-          <p>This streamlining allowed the creation of cost-effective paper prototypes, than later were then optimized
-            to high-fidelity prototypes:
+          <p>The site map was modified to align with user expectations of legal services, simplifying content
+            organization. Categories were minimized, enhancing the application's navigability and user comprehension.
+            This led to the development of economical paper prototypes, subsequently refined into mid and high-fidelity
+            versions.
           </p>
           <h4>1. Onboarding</h4>
-          <p>The initial onboarding emphasized talking to a lawyer and creating legal documents. Through feedback and
-            usability testing, it was redesigned to highlight the 4 main functions: ask a lawyer, docscreator, doc
-            access and newsletter of legal updates:</p>
-          <picture>
-            <source srcset="img/untangled/wireframes/@2onboarding.png" class="wireframes" />
-            <img src="img/untangled/wireframes/@3onboarding" alt="Onboarding" />
-          </picture>
+          <div class="section">
+            <blockquote>The initial onboarding, which focused on consulting a lawyer and creating legal documents, was
+              restructured based on feedback and usability tests. The revised design now prominently features four main
+              functions: Ask a Lawyer, DocsCreator, Doc Access, and a Legal Updates Newsletter.</blockquote>
+            <picture>
+              <source srcset="img/untangled/wireframes/@2onboarding.png" class="wireframes" />
+              <img src="img/untangled/wireframes/@3onboarding" alt="Onboarding" />
+            </picture>
+          </div>
           <h4>2. Ask a Laywer</h4>
-          <p>Users initially followed a sequence of steps, but the prototype underwent multiple redesigns due to
-            usability issues. For example, it became clear that progress notifications were needed during the 48-hour
-            wait for lawyer contact, and it emphasized that this app isn't for emergencies but provides legal advice
-            within a set timeframe. Additionally, it was recognized that the app should attract users by offering a
-            network of verified lawyers with trustworthy profiles.</p>
-          <picture>
-            <source srcset="img/untangled/@2prototypemid.png" class="midprototype" />
-            <img src="img/untangled/@3prototypemid.png" alt="mid-fidelity prototypes"
-              style="width: 80%;" />
-          </picture>
+          <div class="section">
+            <blockquote>The prototype was repeatedly redesigned to address usability issues.
+              Key improvements included changing order of steps and adding progress notifications for the 48-hour lawyer
+              response period, and enhancing its appeal by featuring a
+              network of verified lawyers with credible profiles.</blockquote>
+            <div class="centered-picture">
+              <picture>
+                <source srcset="img/untangled/@2prototypemid.png" class="midprototype" />
+                <img src="img/untangled/@3prototypemid.png" alt="mid-fidelity prototypes" />
+              </picture>
+            </div>
+          </div>
           <h4>3. Access to Docs</h4>
-          <p>At first, users were able to access their profile and navigate to "My Library" to review all app
-            activities, including past legal advice and document creation. This design caused difficulty in finding "documents created"
-            and "lawyers' answers," but separating these functions into two sections, as shown above, improved user navigation and
-            understanding. Now, the problem was to determine the information to add to home and differentiati it from My Profile.</p>
-          <picture>
-            <source srcset=" img/untangled/wireframes/@2myaccount.png" class="wireframes" />
-            <img src="img/untangled/wireframes/@2myaccount.png" alt="My Account" style="width: 50%;"/>
-          </picture>
+          <div class="section">
+            <blockquote>Initially, users accessed a "My Library" section for all app activities like past legal advice
+              and
+              document creation. However, difficulties arose in locating specific "documents created" and "lawyers'
+              answers." Splitting these into two distinct sections enhanced navigation and comprehension. The subsequent
+              challenge involved deciding what information to feature on the home page to distinguish it from the "My
+              Profile" section.</blockquote>
+            <div class="centered-picture">
+              <picture>
+                <source srcset=" img/untangled/wireframes/@2myaccount.png" class="wireframes" />
+                <img src="img/untangled/wireframes/@2myaccount.png" alt="My Account" style="width: 50%;" />
+              </picture>
+            </div>
+          </div>
           <h4>4. Create a LegalDoc</h4>
-          <p>Most users struggled to initiate the document creation process. They either searched for an extended period
-            or required assistance. For this reason, in the menu it was added labels for clarity. This changes aim to improve user understanding and navigation. </p>
-          <picture>
-            <source srcset="img/untangled/wireframes/@1doccreator.png" class="wireframes" />
-            <img src="img/untangled/wireframes/@2doccreator.png" alt="Create LegalDocs" style="width: 30%;" />
-          </picture>
-          <p>The prototypes underwent multiple changes following testing. User feedback was collected, leading to
-            improvements, and the refined prototype was subjected to another round of usability testing:
-          </p>
+          <div class="section">
+            <blockquote>Many users found it challenging to start the document creation process, often searching
+              extensively or
+              needing help. To address this, labels were added to the menu for clarity, aiming to enhance user
+              understanding and ease of navigation.
+            </blockquote>
+            <div class="centered-picture">
+              <picture>
+                <source srcset="img/untangled/wireframes/@1doccreator.png" class="wireframes" />
+                <img src="img/untangled/wireframes/@2doccreator.png" alt="Create LegalDocs" style="width: 30%;" />
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -393,26 +402,24 @@
       <div class="container">
         <h2>Testing Solutions</h2>
         <div class="identifying">
-          <p>The medium-fidelity prototypes on Figma were put through usability testing to evaluate user interaction
-            ease. The feedback from this testing was used to improve the prototype before a subsequent round of testing
-            with these criteria.</p>
-          <h4>Research Objectives</h4>
+          <p>The medium fidelity prototype underwent several revisions informed by user feedback. Here are the outcomes
+            of the usability tests conducted on this version:
+          </p>
+          <h3>Research Objectives</h3>
           <p>1. Assess initial user interactions with the smartphone web app.</p>
           <p>2. Determine the app's comprehension and perceived value.</p>
           <p>3. Measure task completion and time.</p>
           <p>4. Identify questions, needs, and errors during testing.</p>
-
           <div class="grid-container-usability">
             <div class="grid-item-usability">
               <h5>Tasks</h5>
-              <p>Six users performed four tasks: scheduling a lawyer appointment, creating a non-disclosure agreement,
-                accessing created legal documents, and viewing a lawyer's response.
-              </p>
+              <p>Six users executed four tasks: scheduling a lawyer appointment, drafting a non-disclosure agreement,
+                retrieving legal documents, and reviewing a lawyer's response.</p>
             </div>
             <div class="grid-item-usability">
               <h5>Methodology</h5>
-              <p>1. Moderated in-person testing with two Ecuadorian and Berlin residents.</p>
-              <p>2. Moderated remote testing with four entrepreneurs in Quito, Ecuador.</p>
+              <p>1. Conducted moderated in-person tests with two residents from Ecuador in Berlin.</p>
+              <p>2. Performed moderated remote tests with four entrepreneurs in Quito, Ecuador.</p>
             </div>
             <div class="grid-item-usability">
               <h5>Target Audience</h5>
@@ -421,27 +428,25 @@
                 (<a href="https://www.espae.edu.ec/wp-content/uploads/2021/02/GEM_Ecuador_2019.pdf"
                   style="color:#7390f9;" target="_blank">source</a>).</p>
             </div>
-          </div>
-          <div class="grid-container-usability">
             <div class="grid-item-usability">
               <h5>Environment</h5>
-              <p>Remote testing involved screen sharing via Microsoft Teams or Google Meetings.</p>
-              <p>In-person tests were recorded at the user's home with a camera and tripod.</p>
-            </div>
-            <div class="grid-item-usability">
-              <h5>Metrics Collected</h5>
-              <p>Usability Problems using the <a
-                  href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/"
-                  style="color:#7390f9;" target="_blank">Severity Ratings for Usability Problems Framework</a>, that
-                evaluates the severity of design issues.</p>
-              <p>-Level of Satisfaction via the <a
-                  href="https://survicate.com/survey-templates/after-scenario-questionnaire/#:~:text=An%20after%2Dscenario%20questionnaire%20is,and%20identify%20areas%20for%20improvement."
-                  target="_blank" style="color: #7390f9;">After-Scenario Questionnaire (ASQ)</a>, to collect feedback on
-                participants' experience.</p>
+              <p>Remote testing was conducted using screen sharing on Microsoft Teams or Google Meetings. In-person
+                tests were sound-recorded at the user's home.</p>
             </div>
           </div>
           <h3>Analysing the Results</h3>
-          <p>Data from tests were organized into an Affinity Map and a Rainbow spreadsheet for visual feedback analysis.
+          <p>The metrics collected were:</p>
+          <ul>
+            <li>Usability Problems using the <a
+                href="https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/"
+                style="color:#7390f9;" target="_blank">Severity Ratings for Usability Problems Framework</a>, that
+              evaluates the severity of design issues.</li>
+            <li>Level of Satisfaction via the <a
+                href="https://survicate.com/survey-templates/after-scenario-questionnaire/#:~:text=An%20after%2Dscenario%20questionnaire%20is,and%20identify%20areas%20for%20improvement."
+                target="_blank" style="color: #7390f9;">After-Scenario Questionnaire (ASQ)</a>, to collect feedback on
+              participants' experience.</li>
+          </ul>
+          <p>The data was organized into an Affinity Map and a Rainbow spreadsheet for visual feedback analysis.
           </p>
           <details>
             <summary>
@@ -454,23 +459,51 @@
               </picture>
             </div>
           </details>
-          <br>
-          <details>
-            <summary>
-              Rainbow spreadsheet
-            </summary>
-            <div>
-              <br>
-              <picture class="zoom">
-                <source srcset="img/untangled/rainbow/@1rainbow.png" class="container-image" />
-                <img src="img/untangled/rainbow/@2rainbow.png" alt="Rainbow spreadsheet" />
+          <h4>Report of Errors and Recommendations</h4>
+          <p>👍🏼 Users appreciated the main features, the quick and easy process to schedule meetings, the form-filling
+            ease, the verification of information before creating legal documents, the visibility of lawyer profiles,
+            the search bar functionality, and the option to choose meeting times.</p>
+          <p>⚠️ The usability test revealed critical areas for improvement in design, feature visibility, and user
+            onboarding. Balancing the seriousness of legal matters with a user-friendly interface is key. Incorporating
+            direct and clear communication options will enhance user satisfaction and trust. <a
+              href="files/Rainbow Spread Sheet_ Usability Testing.pdf" target="_blank"
+              style="justify-content: left; color: #7390f9;">See Rainbow spreadsheet</a>.
+          </p>
+          <div style="padding: 20px;">
+            <div class="centered-picture">
+              <picture>
+                <source srcset="img/untangled/theend@1.png" />
+                <img src="img/untangled/theend@2.png" alt="Untangled App" />
               </picture>
             </div>
-          </details>
-          <h4>Discoverability Issues</h4>
-          <p>Users found value in the app but had difficulty with specific tasks, confusing "profile" and "home"
-            sections.
-          </p>
+            <p>This is the list of errors to be addressed:</p>
+            <ol>
+              <li><b>'Create a Document' Feature</b>: Users struggle to find the feature; recommended solution is to
+                rename the
+                icon to "DocCreator" and enhance the onboarding process. </li>
+              <li><b>Locating Created Documents</b>: Difficulty in locating documents can be addressed by adding a "List
+                of
+                Documents Created" on the Home, "My Profile" or DocCreator category.</li>
+              <li><b>Finding Lawyers' Responses</b>: To ease access to lawyers' responses,the icon should be
+                more descriptive and add "Ask a Lawyer." </li>
+              <li><b>Identifying User Profile</b>: Users confuse the profile section with home, so it is needed to
+                differentiate profile information from, homepage content and main features.</li>
+              <li><b>Confirmation of Document Creation</b>: Uncertainty about document readiness can be resolved by
+                implementing
+                a design that visually indicates readiness. </li>
+              <li><b>Verification of Legal Document Authenticity</b>: Enhancing the layout to clearly signify the
+                authenticity
+                of legal documents can address verification issues.</li>
+              <li><b>Clarity in Document Lists</b>: To improve document list clarity, distinct formatting and icons for
+                document
+                titles are recommended. </li>
+              <li><b>Clarification of Meeting Type</b>: Confusion over meeting communication methods can be clarified by
+                specifying the method (e.g., Microsoft or Google Meetings). </li>
+              <li><b>Direct Contact with Lawyers</b>: Improving system visibility, potentially with a progress bar, can
+                address
+                issues in direct lawyer contact. </li>
+            </ol>
+          </div>
           <h4>Two Personas Emerged</h4>
           <p>Two user categories emerged: financially privileged entrepreneurs who value app elegance and lower-income
             users focused on affordability and ease of use.
@@ -481,23 +514,25 @@
           <p>During the usability tests, users expressed concerns about the cost and complexity of legal services.
             Recognizing the need to create a calming and reassuring app environment, research was done on colors that
             evoke calmness. Blue and green were identified as suitable choices for the legal app due to their calming
-            properties.
-          </p>
-          <p>A color preference test was conducted to decide between the two, resulting in a strong preference for blue,
-            with 83% of participants favoring it over green. Blue was thus selected for the app's design, supported by
+            properties.</p>
+          <p>A color preference test was conducted to decide between the two, resulting in a strong preference for
+            blue, with 83% of participants favoring it over green. Blue was thus selected for the app's design,
+            supported by
             user feedback highlighting blue as a classic and trustworthy color.
           </p>
           <picture class="zoom">
             <source srcset="img/untangled/@1preferencetest.png" />
             <a href="https://my.helio.app/report/01GW7RJBGSBBB6CQF1E0PMNMMQ/section/100291?section_id=100291"
               target="_blank"><img src="img/untangled/@2preferencetest.png" alt="Preference Test Results"
-                class="wireframes" style="display: block; margin-left: auto; margin-right: auto;" /></a>
+                class="centered-picture" /></a>
           </picture>
           <h4>Visual and Language Design</h4>
           <p>1. Blue was chosen as the main color after a preference test due to its association with trust.</p>
           <p>2. Lawyer photos and a white background were used for a professional look.</p>
           <p>3. Friendly, non-judgmental language was selected to make users feel supported and encourage open
             engagement with legal issues.</p>
+          <p>4. Here you can see the <a href="files/user_interface_design_documentation.pdf" target="_blank"
+              style="justify-content: left; color: #7390f9;">User Interface Design Documentation</a>.</p>
         </div>
       </div>
     </div>
@@ -512,17 +547,17 @@
             feedback from UX peers and adhering to <a
               href="https://www.interaction-design.org/literature/topics/gestalt-principles#what_are_the_gestalt_principles?-0"
               target="_blank" style="color: #00306b;">Gestalt Theory</a> and <a
-              href="https://m2.material.io/design/introduction" target="_blank" style="color: #00306b;">Material Design
+              href="https://m2.material.io/design/introduction" target="_blank" style="color: #00306b;">Material
+              Design
               Principles</a> for high-fidelity wireframes. It boasts a clear, consistent layout with a calming blue
             color scheme, although integration of technology to aid users with different abilities is still underway.
           </p>
-          <img src="img/untangled/theend@2.png" alt="Thank You">
           <h3>Acknowledgments</h3>
-          <p>The design refinements have been significantly influenced by suggestions from fellow UX designers, leading
-            to a more sophisticated version of the app. Key features are established, yet "DocCreator" and Chatbot
-            functionalities require further development for enhanced performance.
+          <p>The design refinements have been significantly influenced by suggestions from fellow UX designers,
+            leading to a more sophisticated version of the app. Key features are established, yet "DocCreator" and
+            Chatbot functionalities require further development for enhanced performance.
           </p>
-          <picture class="zoom">
+          <picture>
             <source srcset="img/untangled/@2feedbackux.png" class="container-image" />
             <img src="img/untangled/@1feedbackux.png" alt="Feedback UX peers"
               style="border-radius: 20px; width: 50%; display: block; margin: 0 auto;">
@@ -535,6 +570,7 @@
           <h3>Future Analyses</h3>
           <p>Separate analyses for different stakeholders such as lawyers and legal firms are planned to tailor the
             service offerings to their requirements.</p>
+   
           <h3>Reflecting on Design Changes</h3>
           <p>The web app has undergone considerable modifications from its inception. For instance, initial ambiguity
             about the home screen's function was resolved by featuring a newsletter highlighting recent legal updates,
@@ -544,31 +580,22 @@
           </p>
           <h4>Distinctive Market Position</h4>
           <p>Untangled differentiates itself by catering specifically to Ecuadorian entrepreneurs, acknowledging the
-            unique
-            challenges of the local regulatory environment. Its design prioritizes affordability and reliability in
-            legal
-            services, including a section for regulatory updates which is vital in dynamic legal contexts.
+            unique challenges of the local regulatory environment. Its design prioritizes affordability and reliability in
+            legal services, including a section for regulatory updates which is vital in dynamic legal contexts.
           </p>
 
           <h4>Enhancement Opportunities</h4>
           <ul>
             <li><b>Simplifying Forms</b>: Incorporating AI could streamline the process of filling out lengthy forms,
-              boosting
-              user
-              interaction.</li>
-            <li><b>Personalization</b>: Adding a feature for users to provide business-specific details could offer more
-              tailored
-              legal advice and efficiency for lawyers.</li>
+              boosting user  interaction.</li>
+            <li><b>Personalization</b>: Adding a feature for users to provide business-specific details could offer
+              more tailored legal advice and efficiency for lawyers.</li>
             <li><b>Broadening User Base</b>: While focusing on cost-conscious entrepreneurs, potential exists to also
-              attract
-              affluent entrepreneurs seeking a sophisticated user experience.</li>
+              attract affluent entrepreneurs seeking a sophisticated user experience.</li>
             <li><b>Trust and Comfort</b>: The design should continue to emphasize trust and tranquility, crucial for
-              users
-              concerned
-              with legal costs.</li>
+              users concerned with legal costs.</li>
             <li><b>Legal Collaboration</b>: Partnering with more legal professionals could provide a wider range of
-              services
-              and pricing, adding value to the app.</li>
+              services and pricing, adding value to the app.</li>
           </ul>
           <h4>Challenges and Tools</h4>
           <ul>
@@ -578,8 +605,8 @@
             <li><b>Legal Insights</b>: Time constraints limited collaboration with legal professionals, an aspect that
               could
               greatly enrich the app's offerings.</li>
-            <li><b>Time Constraints</b>: More time was needed to fully develop the feature DocsCreator.</li>
-          </ul>
+              <li><b>Time Constraints</b>: Additional time was required for the complete development of the DocsCreator feature. Also, there was an unmet need for enhanced trust in lawyers: while LinkedIn links were mostly trusted, some users recommended further validation through law firm affiliations or legal directories.</li>
+            </ul>
         </div>
       </div>
     </div>
