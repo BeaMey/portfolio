@@ -863,7 +863,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
 }
 
 .centered-picture1 {
@@ -1165,9 +1164,11 @@ main {
   }
 }
 
-.wireframes img {
-  max-width: 80%;
-  height: auto;
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .wireframes4 {
+    width: 80%;
+  }
 }
 
 
