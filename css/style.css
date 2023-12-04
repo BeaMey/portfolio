@@ -1320,6 +1320,13 @@ footer {
   text-align: center;
 }
 
+.grid-container {
+  display: flex;
+  justify-content: center; /* Aligns children (iframes) horizontally in the center */
+  flex-wrap: wrap; /* Allows items to wrap into the next line as needed */
+  gap: 10px; /* Optional: Adds space between iframes */
+}
+
 .profilepic {
   display: flex;
   justify-content: center;
