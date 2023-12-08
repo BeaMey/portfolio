@@ -592,6 +592,12 @@ nav a:focus {
 
 /* WHAT I DO INDEX */
 /* colums WHAT I DO*/
+.grid-container-marketing {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
 .text-contentindex {
   display: flex;
   flex-direction: column;
@@ -1307,12 +1313,6 @@ footer {
   color: var(--periwinkle);
 }
 
-.grid-container-marketing {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-}
-
 .grid-container-ux {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1537,10 +1537,6 @@ Medium devices (640px and larger)
     max-width: 210px;
   }
 
-  .grid-container-marketing {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .market {
     padding: 20px;
     max-height: 427px;
@@ -1606,6 +1602,12 @@ Large devices (1024px or larger)
 
   .centered-picture1 {
     padding: 0px 100px;
+    }
+
+    .grid-container-marketing {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 }
 
