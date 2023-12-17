@@ -538,7 +538,8 @@ nav a:focus {
 }
 
 .highlight {
-  background-color: #FFD8CB;
+  font-weight: 500;
+  color: var(--caribeancurrent);
 }
 
 .colored-underline {
