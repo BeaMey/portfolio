@@ -537,6 +537,28 @@ nav a:focus {
   font-weight: 600;
 }
 
+.highlight {
+  background-color: #FFD8CB;
+}
+
+.colored-underline {
+  position: relative;
+  display: inline-block; /* Necessary for the positioning of the pseudo-element */
+  text-decoration: none; /* Remove default underline */
+}
+
+.colored-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; /* Adjust as needed for positioning below the text */
+  height: 3px; /* Thickness of the underline */
+  background-image: linear-gradient(120deg, #CCCCFF 0%, #ACE6D5 100%);
+  z-index: -1;
+}
+
+
 .card-list .developer {
   background-color: var(--periwinkle);
   color: var(--russianviolet);
@@ -1112,7 +1134,7 @@ main {
 }
 
 .container.law p {
-  padding: 20px 60px; 
+  padding: 20px; 
 }
 
 .marketing {
