@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.88em;
+  font-size: 1.6em;
   font-weight: 600;
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 500;
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
@@ -461,7 +461,6 @@ nav a:focus {
   font-weight: 500;
   font-size: 1.2em;
   background: -webkit-linear-gradient(#36013F, #103D3D);
-  /* Gradient from yellow to orange */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
@@ -496,7 +495,6 @@ nav a:focus {
     max-width: 430px;
     height: auto;
   }
-
 }
 
 /* PROJECTS card list projects */
@@ -533,7 +531,7 @@ nav a:focus {
   background: var(--palepurple);
   margin-top: 12px;
   padding: 8px 15px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   border-radius: 50px;
   font-weight: 600;
 }
@@ -559,6 +557,7 @@ nav a:focus {
   background-image: linear-gradient(120deg, #CCCCFF 0%, #ACE6D5 100%);
   z-index: -1;
 }
+
 
 .card-list .developer {
   background-color: var(--periwinkle);
@@ -601,7 +600,6 @@ nav a:focus {
   color: white;
 }
 
-
 @media screen and (min-width: 640px) {
   .container .card-list {
     grid-template-columns: repeat(2, 1fr);
@@ -616,7 +614,7 @@ nav a:focus {
 
 .case-study .card-study {
   background: white;
-  padding: 24px;
+  padding: 12px;
   border-radius: 8px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
   list-style: none;
@@ -933,33 +931,11 @@ main {
   border: 4px solid #ECF0FF;
   flex: 0 50%;
   display: flex;
-  /* Asegura que "projectdetail" se expanda completamente en altura */
   flex-direction: column;
 }
 
 /* Untangled project page */
 /* Intro*/
-.content-wrapperintro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.image-contentintro {
-  flex: 20%;
-  /* Takes up 30% of the container width */
-  display: flex;
-  justify-content: center;
-  /* Center the image if the div has more space */
-}
-
-.text-content {
-  flex: 70%;
-  /* Takes up 70% of the container width */
-  padding-left: 20px;
-  /* Optional padding between image and text */
-}
-
 .centered-picture {
   display: flex;
   justify-content: center;
@@ -985,19 +961,35 @@ main {
   height: auto;
 }
 
+.introduction-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.foto-emprendedores {
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #ECF0FF;
+  flex: 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.theproblem {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #ECF0FF;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .features {
   font-weight: 450;
-}
-
-.features1 {
-  font-weight: 450;
-  font-size: 20px;
-}
-
-.features-thanks {
-  font-weight: 500;
-  padding: 2px 4px;
-  font-size: 1.5em;
 }
 
 .description {
@@ -1005,8 +997,24 @@ main {
   color: var(--yale-blue);
 }
 
+.grid-proyect {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item-project {
+  padding: 32px;
+  text-align: center;
+}
+
+.project-logo {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 640px) {
-  .content-wrapperintro {
+  .introduction-wrap {
     flex-direction: column;
     /* This will stack children vertically */
   }
@@ -1019,8 +1027,8 @@ main {
     /* Optional: centers them if they are smaller than the container's width */
   }
 
-  .project-logo {
-    display: none;
+  .grid-proyect {
+    grid-template-columns: repeat(1, auto); /* Two columns on screens wider than 768px */
   }
 }
 
@@ -1030,49 +1038,13 @@ main {
   border: 2px solid #f5f5f5;
 }
 
-.theproblem {
-  padding: 30px;
-  border-radius: 20px;
-  background-color: #ECF0FF;
-  flex: 0 0 50%;
-  display: flex;
-  /* Asegura que "theproblem" se expanda completamente en altura */
-  flex-direction: column;
-  justify-content: center;
-}
 
-.projectdetail {
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px solid #ECF0FF;
-  flex: 0 50%;
-  display: flex;
-  /* Asegura que "projectdetail" se expanda completamente en altura */
-  flex-direction: column;
-  justify-content: center;
-}
-
-.introduction-wrap {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  /* Asegura que todos los hijos de introduction-wrap tengan la misma altura */
-  gap: 12px;
-}
-
-@media (max-width: 889px) {
-  .introduction-wrap {
-    flex-direction: column;
-    /* Change layout to columnar for screens less than 1000px */
-  }
-}
 
 /* Style the tab */
 .tab {
   display: grid;
   align-content: space-evenly;
   grid-template-columns: repeat(1, 1fr);
-  /* One columns */
   gap: 10px
 }
 
@@ -1788,7 +1760,6 @@ Extra-large devices (1920px or larger)
 /* Estilo para case study "Untangled" */
 /* Portada untangled*/
 .container.intro {
-  background: linear-gradient(to bottom, #F0F0FF, #CCCCFF, #97DEC9);
   text-align: center;
   border: 20px solid #fff;
   border-radius: 30px;
