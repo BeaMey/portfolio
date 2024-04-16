@@ -1007,6 +1007,44 @@ main {
   text-align: left;
 }
 
+.grid-proyect1 {
+  display: grid;
+  grid-gap: 10px; /* Espacio entre las columnas y filas */
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  padding: 8px;
+}
+
+.grid-item-project1 {
+  padding: 12px;
+  text-align: left;  
+  background-color: var(--magnolia);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.comment {
+  border: 2px solid #FFF5D1;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.comment::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.comment span {
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .comment {
+      text-align: center;
+  }
+}
+
 .project-logo {
   border-radius: 10px;
   max-width: 100%;
@@ -1262,25 +1300,6 @@ div.scrollmenu a {
 
 
 /* Style the close button */
-.topright {
-  float: right;
-  cursor: pointer;
-  font-size: 24px;
-  background-color: var(--midnightgreen);
-  color: var(--tiffanyblue);
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  margin-right: 5%;
-  margin-bottom: 8%;
-}
-
-.topright:hover {
-  background-color: var(--tiffanyblue);
-  color: var(--midnightgreen);
-}
-
 .grid-participant {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
