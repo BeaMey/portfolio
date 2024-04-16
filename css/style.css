@@ -404,7 +404,7 @@ nav a:focus {
   height: auto;
   display: block;
   filter: grayscale(100%);
-  border-radius: 20px;
+  border-radius: 50%;
   margin: 20px auto;
 }
 
@@ -493,9 +493,10 @@ nav a:focus {
   }
 
   #gif {
-    max-width: 730px;
+    max-width: 430px;
     height: auto;
   }
+
 }
 
 /* PROJECTS card list projects */
@@ -532,7 +533,7 @@ nav a:focus {
   background: var(--palepurple);
   margin-top: 12px;
   padding: 8px 15px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   border-radius: 50px;
   font-weight: 600;
 }
@@ -558,7 +559,6 @@ nav a:focus {
   background-image: linear-gradient(120deg, #CCCCFF 0%, #ACE6D5 100%);
   z-index: -1;
 }
-
 
 .card-list .developer {
   background-color: var(--periwinkle);
@@ -601,6 +601,7 @@ nav a:focus {
   color: white;
 }
 
+
 @media screen and (min-width: 640px) {
   .container .card-list {
     grid-template-columns: repeat(2, 1fr);
@@ -610,6 +611,85 @@ nav a:focus {
 @media screen and (max-width: 980px) {
   .card-list {
     margin: 0 auto;
+  }
+}
+
+.case-study .card-study {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.case-study {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 24px; 
+}
+
+.card-study {
+  display: flex;
+  align-items: center; 
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-35deg);
+  height: 40px;
+  width: 40px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-top: 40px;
+  transition: 0.2s ease;
+}
+
+.case-study .card-study:hover .arrows {
+  background: var(--midnightgreen);
+  color: white;
+}
+
+.case-study span {
+  display: inline-block;
+  background: var(--palepurple);
+  margin-top: 12px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+
+.image-column {
+  flex: 0.7; 
+  padding: 24px; 
+}
+
+.text-column {
+  flex: 1.3; 
+  padding: 24px; 
+}
+
+.project-image {
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media (max-width: 768px) {
+  .card-study {
+    flex-direction: column; 
+  }
+
+  .image-column, .text-column {
+    flex: none; 
+    width: 100%; 
   }
 }
 
