@@ -1039,12 +1039,11 @@ main {
 }
 
 
-
 /* Style the tab */
 .tab {
   display: grid;
   align-content: space-evenly;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px
 }
 
@@ -1122,12 +1121,19 @@ main {
   border: none;
 }
 
-@media screen and (min-width: 640px) {
-  .tab {
-    grid-template-columns: repeat(3, 1fr);
-    /* Two columns */
-  }
+.scrollmenu  {
+  overflow: auto;
+  white-space: nowrap;
 }
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
 
 /* Case Study */
 .userresearch {
