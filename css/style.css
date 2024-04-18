@@ -21,7 +21,7 @@ html {
   --caribeancurrent: #1A6463;
   --midnightgreen: #103D3D;
   --russianviolet: #36013F;
-  --melon: #FCBFAB;
+  --melon: #FFE1D8;
   --black: #000000;
   --white: #fbfdfc;
 
@@ -1009,7 +1009,7 @@ main {
 
 .grid-proyect1 {
   display: grid;
-  grid-gap: 10px; /* Espacio entre las columnas y filas */
+  grid-gap: 12px; /* Espacio entre las columnas y filas */
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   padding: 8px;
 }
@@ -1017,32 +1017,24 @@ main {
 .grid-item-project1 {
   padding: 12px;
   text-align: left;  
-  background-color: var(--magnolia);
+  background-color: var(--yellow-bus);
   border-radius: 12px;
   text-align: center;
 }
 
-.comment {
-  border: 2px solid #FFF5D1;
+.grid-proyect2 {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+ padding: 8px;
+}
+
+.grid-item-project2 {
+  padding: 12px;
+  text-align: left;  
+  border: 2px solid var(--periwinkle);
   border-radius: 12px;
-  padding: 16px;
-  margin: 16px 0
-}
-
-.comment::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.comment span {
-  margin-right: 15px;
-}
-
-@media (max-width: 500px) {
-  .comment {
-      text-align: center;
-  }
+  text-align: center;
 }
 
 .project-logo {
@@ -1124,6 +1116,9 @@ main {
   border-top: none;
 }
 
+.tabcontent:first-child {
+  display: block;
+}
 /* Style the buttons topnav */
 .topnav {
   display: grid;
@@ -1171,7 +1166,6 @@ div.scrollmenu a {
   padding: 14px;
   text-decoration: none;
 }
-
 
 /* Case Study */
 .userresearch {
@@ -1626,7 +1620,6 @@ Medium devices (640px and larger)
   .container.about-story {
     display: flex;
     align-items: stretch;
-    /* Ensures all direct children are the full height of the parent container */
   }
 
   .about-button {
@@ -1925,3 +1918,55 @@ Extra-large devices (1920px or larger)
   justify-content: space-around; 
   gap: 20px;
 }
+
+
+.column-findings {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.row-findings:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column-findings {
+    width: 100%;
+  }
+}
+
+.columnasf {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap;
+}
+
+.columnf1 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* Align the image to the top */
+}
+
+.columnf1 img {
+  max-width: 100%;
+  max-height: 100%; /* Limit the image to not exceed the parent's height */
+  object-fit: contain; /* Ensures the image is fully visible, not cropped */
+}
+
+#columnf2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* This will vertically center the text if it is less than the height of the image */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .columnf1, #columnf2 {
+      flex-basis: 100%; /* Take full width on small screens */
+  }
+}
+
