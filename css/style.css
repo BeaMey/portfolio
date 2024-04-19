@@ -1043,6 +1043,12 @@ main {
   height: auto;
 }
 
+.findings-logo {
+  max-width: 230px;
+  height: auto;
+  align-self: center;
+}
+
 @media (max-width: 640px) {
   .introduction-wrap {
     flex-direction: column;
@@ -1069,7 +1075,6 @@ main {
 }
 
 /* Untangled - Emphasize */
-
 .column-findings {
   display: grid;
   grid-gap: 16px;
@@ -1244,6 +1249,16 @@ div.scrollmenu a {
   text-align: center;
   padding: 14px;
   text-decoration: none;
+}
+
+.zoom-image {
+  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+  display: block; /* Ensures the image is block level to handle overflow in some browsers */
+  max-width: 100%; /* Optional: makes the image responsive */
+}
+
+.img-unt:hover .zoom-image {
+  transform: scale(1.1); /* Zooms in the image by 10% */
 }
 
 /* Case Study */
