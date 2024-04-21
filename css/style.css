@@ -1016,7 +1016,6 @@ main {
 
 .grid-item-project1 {
   padding: 12px;
-  text-align: left;  
   background-color: var(--yellow-bus);
   border-radius: 12px;
   text-align: center;
@@ -1032,10 +1031,26 @@ main {
 .grid-item-project2 {
   padding: 12px;
   text-align: left;  
-  border: 2px solid var(--periwinkle);
+  background-color: var(--yellow-bus);
   border-radius: 12px;
   text-align: center;
 }
+
+.grid-proyect3 {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 2fr));
+  padding: 12px;
+}
+
+.grid-item-project3 {
+  padding: 12px;
+  text-align: center;  
+  border: 3px solid #FFEA9E;
+  background-color: var(--yellow-bus);
+}
+
+
 
 .project-logo {
   border-radius: 10px;
