@@ -1016,7 +1016,7 @@ main {
 
 .grid-item-project1 {
   padding: 12px;
-  background-color: var(--yellow-bus);
+  background-color: var(--Hex);
   border-radius: 12px;
   text-align: center;
 }
@@ -1031,7 +1031,8 @@ main {
 .grid-item-project2 {
   padding: 12px;
   text-align: left;  
-  background-color: var(--yellow-bus);
+  border: 2px solid var(--periwinkle);
+  background-color: transparent;
   border-radius: 12px;
   text-align: center;
 }
@@ -1280,6 +1281,15 @@ div.scrollmenu a {
 .img-unt:hover .zoom-image {
   transform: scale(1.1); 
 }
+
+.img-unt1 {
+  margin-bottom: 12px;
+}
+
+.img-unt1:hover .zoom-image {
+  transform: scale(1.3); 
+}
+
 
 /* Case Study */
 .userresearch {
