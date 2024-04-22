@@ -24,6 +24,7 @@ html {
   --melon: #FFE1D8;
   --black: #000000;
   --white: #fbfdfc;
+  --gray-dark: #474747;
 
   --palepurple: #efdeff;
   --yale-blue: #7390f9;
@@ -84,7 +85,7 @@ h4 {
   font-weight: 450;
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
-  color: var(--caribeancurrent);
+  color: var(--gray-dark);
   text-transform: none;
 }
 
@@ -543,8 +544,10 @@ nav a:focus {
 
 .colored-underline {
   position: relative;
-  display: inline-block; /* Necessary for the positioning of the pseudo-element */
-  text-decoration: none; /* Remove default underline */
+  display: inline-block;
+  /* Necessary for the positioning of the pseudo-element */
+  text-decoration: none;
+  /* Remove default underline */
 }
 
 .colored-underline::after {
@@ -552,8 +555,10 @@ nav a:focus {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -2px; /* Adjust as needed for positioning below the text */
-  height: 3px; /* Thickness of the underline */
+  bottom: -2px;
+  /* Adjust as needed for positioning below the text */
+  height: 3px;
+  /* Thickness of the underline */
   background-image: linear-gradient(120deg, #CCCCFF 0%, #ACE6D5 100%);
   z-index: -1;
 }
@@ -626,13 +631,13 @@ nav a:focus {
 
 .case-study {
   display: flex;
-  justify-content: center; 
-  margin-bottom: 24px; 
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
 .card-study {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .arrows {
@@ -666,28 +671,29 @@ nav a:focus {
 
 
 .image-column {
-  flex: 0.7; 
-  padding: 12px; 
+  flex: 0.7;
+  padding: 12px;
 }
 
 .text-column {
-  flex: 1.3; 
-  padding: 12px, 24px; 
+  flex: 1.3;
+  padding: 12px, 24px;
 }
 
 .project-image {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
   .card-study {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
-  .image-column, .text-column {
-    flex: none; 
-    width: 100%; 
+  .image-column,
+  .text-column {
+    flex: none;
+    width: 100%;
   }
 }
 
@@ -965,7 +971,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 24px;
+  gap: 32px;
 }
 
 .foto-emprendedores {
@@ -1009,7 +1015,7 @@ main {
 
 .grid-proyect1 {
   display: grid;
-  grid-gap: 12px; /* Espacio entre las columnas y filas */
+  grid-gap: 12px;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   padding: 8px;
 }
@@ -1030,28 +1036,40 @@ main {
 
 .grid-item-project2 {
   padding: 12px;
-  text-align: left;  
-  border: 2px solid var(--periwinkle);
-  background-color: transparent;
-  border-radius: 12px;
   text-align: center;
 }
 
 .grid-proyect3 {
   display: grid;
   grid-gap: 12px;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(3fr));
   padding: 12px;
 }
 
 .grid-item-project3 {
   padding: 12px;
-  text-align: center;  
+  text-align: center;
   border: 3px solid #FFEA9E;
+  border-radius: 12px;
   background-color: var(--yellow-bus);
 }
 
+.grid-proyect4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
 
+.grid-item-project4 {
+  text-align: center;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 800px) {
+  .grid-proyect4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .project-logo {
   border-radius: 10px;
@@ -1080,7 +1098,8 @@ main {
   }
 
   .grid-proyect {
-    grid-template-columns: repeat(1, auto); /* Two columns on screens wider than 768px */
+    grid-template-columns: repeat(1, auto);
+    /* Two columns on screens wider than 768px */
   }
 }
 
@@ -1091,42 +1110,23 @@ main {
 }
 
 /* Untangled - Emphasize */
-.column-findings {
-  display: grid;
-  grid-gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 12px;
-}
-
-.row-findings:after {
-  padding: 12px;
-  text-align: left;
-  background-color: var(--yellow-bus);
-  border-radius: 12px;
-  text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  .column-findings {
-    width: 100%;
-  }
-}
-
 .columnasf {
   display: flex;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
+  /* Align items to the top */
   flex-wrap: wrap;
 }
 
 .columnf1 {
   flex: 1;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 .columnf1 img {
-  max-width: 100%; /* Ensures the image is responsive within its container */
+  max-width: 100%;
+  /* Ensures the image is responsive within its container */
   height: auto;
 }
 
@@ -1136,12 +1136,16 @@ main {
 }
 
 @media (max-width: 768px) {
-  .columnf1, #columnf2 {
-      flex-basis: 100%; /* Take full width on small screens */
+
+  .columnf1,
+  #columnf2 {
+    flex-basis: 100%;
+    /* Take full width on small screens */
   }
 
   .columnf1 img {
-    max-width: 50%; /* Ensures the image is responsive within its container */
+    max-width: 50%;
+    /* Ensures the image is responsive within its container */
     height: auto;
   }
 }
@@ -1162,7 +1166,7 @@ main {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .columnfindings  {
+  .columnfindings {
     width: 100%;
   }
 }
@@ -1230,7 +1234,8 @@ main {
 .tablinks {
   background-color: transparent;
   color: var(--russianviolet);
-  border: 1.5px solid var(--magnolia); /* Corrected line */
+  border: 1.5px solid var(--magnolia);
+  /* Corrected line */
   float: left;
   outline: none;
   cursor: pointer;
@@ -1254,7 +1259,7 @@ main {
   border: none;
 }
 
-.scrollmenu  {
+.scrollmenu {
   overflow: auto;
   white-space: nowrap;
   margin-left: -30px;
@@ -1269,9 +1274,9 @@ div.scrollmenu a {
 }
 
 .zoom-image {
-  transition: transform 0.5s ease; /* Smooth transition for zoom effect */
-  display: block; /* Ensures the image is block level to handle overflow in some browsers */
-  max-width: 100%; /* Optional: makes the image responsive */
+  transition: transform 0.5s ease;
+  display: block;
+  max-width: 100%;
 }
 
 .img-unt {
@@ -1279,7 +1284,7 @@ div.scrollmenu a {
 }
 
 .img-unt:hover .zoom-image {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .img-unt1 {
@@ -1287,7 +1292,19 @@ div.scrollmenu a {
 }
 
 .img-unt1:hover .zoom-image {
-  transform: scale(1.3); 
+  transform: scale(1.2);
+}
+
+.img-unt2 {
+  display: grid;
+  align-items: center;
+}
+
+.utesting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
 }
 
 
@@ -1349,7 +1366,7 @@ div.scrollmenu a {
 }
 
 .container.law p {
-  padding: 20px; 
+  padding: 20px;
 }
 
 .marketing {
@@ -1379,11 +1396,7 @@ div.scrollmenu a {
 }
 
 .grid-item-usability {
-  background-color: transparent;
-  padding: 20px;
-  border: 1px solid white;
-  border-radius: 20px;
-  background-color: var(--yellow-bus);
+  padding: 24px;
 }
 
 .grid-item-usability h4 {
@@ -1540,9 +1553,12 @@ footer {
 
 .grid-container {
   display: flex;
-  justify-content: center; /* Aligns children (iframes) horizontally in the center */
-  flex-wrap: wrap; /* Allows items to wrap into the next line as needed */
-  gap: 10px; /* Optional: Adds space between iframes */
+  justify-content: center;
+  /* Aligns children (iframes) horizontally in the center */
+  flex-wrap: wrap;
+  /* Allows items to wrap into the next line as needed */
+  gap: 10px;
+  /* Optional: Adds space between iframes */
 }
 
 .profilepic {
@@ -1763,7 +1779,7 @@ Medium devices (640px and larger)
   }
 
   .centered-picture1 {
-  padding: 0px 40px;
+    padding: 0px 40px;
   }
 }
 
@@ -1819,13 +1835,13 @@ Large devices (1024px or larger)
 
   .centered-picture1 {
     padding: 0px 100px;
-    }
+  }
 
-    .grid-container-marketing {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
+  .grid-container-marketing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 /* ==============================
@@ -2033,15 +2049,13 @@ Extra-large devices (1920px or larger)
 /* Responsive Design: For smaller screens, make each box take full width */
 @media screen and (max-width: 600px) {
   .box {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
+
 .iframe-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-around;
   gap: 20px;
 }
-
-
-
