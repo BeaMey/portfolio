@@ -959,7 +959,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+}
+
+.centered-picture1 video {
+  max-width: 300px;
+  border-radius: 10px; /* Ajusta el valor del radio según tus necesidades */
 }
 
 .project-image {
@@ -984,10 +988,26 @@ main {
   justify-content: center;
 }
 
+.foto-emprendedores1 {
+  border-radius: 20px;
+  flex: 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .theproblem {
   padding: 30px;
   border-radius: 20px;
   background-color: #ECF0FF;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.theproblem1 {
+  border-radius: 20px;
   flex: 0 0 50%;
   display: flex;
   flex-direction: column;
@@ -1136,7 +1156,6 @@ main {
 }
 
 @media (max-width: 768px) {
-
   .columnf1,
   #columnf2 {
     flex-basis: 100%;
@@ -1168,6 +1187,25 @@ main {
 @media screen and (max-width: 600px) {
   .columnfindings {
     width: 100%;
+  }
+}
+
+.rowfindings1 {
+  display: flex;
+  justify-content: center; /* Centers the columns in the row */
+}
+
+.columnfindings1 {
+  flex: 0 0 50%; /* Don't grow or shrink, start at 50% width */
+  max-width: 400px; /* Maximum width of each column */
+  padding: 30px;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 600px) {
+  .columnfindings1 {
+    flex-basis: 100%; /* Each column takes full width */
+    max-width: none; /* Removes the max-width constraint */
   }
 }
 
