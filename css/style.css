@@ -32,6 +32,12 @@ html {
   --aliceblue: #DEEFFF;
   --french: #D2F6F7;
   --yellow-bus: #FFF5D1;
+
+  --uranian-blue: #acdffe;
+  --neon-blue: #5965f9;
+  --persian-blue: #1241cd;
+  --violet-blue: #1349c9;
+  --black: #000000;
 }
 
 body {
@@ -89,28 +95,63 @@ h4 {
   text-transform: none;
 }
 
-.eight h2 {
+.untangled {
+  font-size: 2.5em;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 18px 0;
-  grid-gap: 16px;
-  color: var(--russianviolet);
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    var(--neon-blue),
+    var(--persian-blue),
+    var(--violet-blue),
+    var(--black)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: var(--size) var(--size);
+  background-position: 0 0;
+  animation: stripes 1s linear infinite;
 }
 
-.eight h2:after,
-.eight h2:before {
-  content: " ";
-  display: block;
-  border-bottom: 2px solid var(--periwinkle);
+.style1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5em;
+  background: linear-gradient(
+    to right,
+    var(--neon-blue),
+    var(--persian-blue),
+    var(--violet-blue),
+    var(--black)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: var(--size) var(--size);
+  background-position: 0 0;
+  animation: stripes 1s linear infinite;
 }
 
-.div .eight {
-  position: relative;
-  width: 30%;
-  max-width: 500px;
-  padding: 2em;
-  margin: 1.5em auto;
+.style3 {
+  background: linear-gradient(
+    to right,
+    var(--midnightgreen),
+    var(--caribeancurrent)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: var(--size) var(--size);
+  background-position: 0 0;
+  animation: stripes 1s linear infinite;
+}
+
+@keyframes stripes {
+  100% {
+    background-position: var(--size) 0, var(--size) 0, var(--size) 0;
+  }
 }
 
 /* Base styles for the heading */
@@ -963,7 +1004,8 @@ main {
 
 .centered-picture1 video {
   max-width: 300px;
-  border-radius: 10px; /* Ajusta el valor del radio según tus necesidades */
+  border-radius: 10px;
+  /* Ajusta el valor del radio según tus necesidades */
 }
 
 .project-image {
@@ -1156,6 +1198,7 @@ main {
 }
 
 @media (max-width: 768px) {
+
   .columnf1,
   #columnf2 {
     flex-basis: 100%;
@@ -1190,22 +1233,24 @@ main {
   }
 }
 
-.rowfindings1 {
+.rowdesign {
   display: flex;
-  justify-content: center; /* Centers the columns in the row */
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Centers the columns in the row */
 }
 
-.columnfindings1 {
-  flex: 0 0 50%; /* Don't grow or shrink, start at 50% width */
-  max-width: 400px; /* Maximum width of each column */
-  padding: 30px;
+.columndesign {
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive layout for smaller screens */
 @media screen and (max-width: 600px) {
-  .columnfindings1 {
-    flex-basis: 100%; /* Each column takes full width */
-    max-width: none; /* Removes the max-width constraint */
+  .columndesign {
+    flex: 1 1 100%;
   }
 }
 
