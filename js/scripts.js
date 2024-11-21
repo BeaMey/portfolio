@@ -121,12 +121,21 @@ function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent-germanpro");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      tabcontent[i].style.display = "none"; // Hide all tab content
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tab-germanpron");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i].className.replace(" active", ""); // Remove 'active' class from all buttons
     }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+    document.getElementById(cityName).style.display = "block"; // Show the selected tab content
+    evt.currentTarget.className += " active"; // Add 'active' class to the clicked button
+}
+
+function nextTab(cityName) {
+    // Directly call the openCity function with the corresponding tab
+    var evt = {
+        currentTarget: document.querySelector('[onclick="openCity(event, \'' + cityName + '\')"]')
+    };
+    openCity(evt, cityName);
+}
+
