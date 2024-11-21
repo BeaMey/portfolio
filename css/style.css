@@ -44,14 +44,14 @@ body {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.6;
   color: var(--black);
 }
 
 h1 {
   color: var(--russian-violet);
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -60,16 +60,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 600;
+  text-align: center;
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
   color: var(--russian-violet);
   text-transform: uppercase;
 }
 
+.contact {
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  font-size: 2em;
+  /* Tamaño de la fuente */
+  font-weight: bold;
+  /* Opcional: para darle más peso al texto */
+}
+
 h3 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 500;
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
@@ -77,22 +87,24 @@ h3 {
   border-radius: 2px;
 }
 
-.h3about {
-  background-color: transparent;
-  text-align: left;
-}
-
-.h3timeline {
-  background-color: transparent;
-}
-
 h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 450;
   line-height: 1.125;
   font-family: "Playfair Display", sans-serif;
   color: var(--gray-dark);
   text-transform: none;
+}
+
+@media (min-width: 768px) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-align: left;
+    /* Align the text to the left */
+  }
 }
 
 .untangled {
@@ -101,13 +113,11 @@ h4 {
   justify-content: center;
   text-align: center;
   width: 100%;
-  background: linear-gradient(
-    to right,
-    var(--neon-blue),
-    var(--persian-blue),
-    var(--violet-blue),
-    var(--black)
-  );
+  background: linear-gradient(to right,
+      var(--neon-blue),
+      var(--persian-blue),
+      var(--violet-blue),
+      var(--black));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: var(--size) var(--size);
@@ -121,13 +131,11 @@ h4 {
   text-align: center;
   width: 100%;
   font-size: 2.5em;
-  background: linear-gradient(
-    to right,
-    var(--neon-blue),
-    var(--persian-blue),
-    var(--violet-blue),
-    var(--black)
-  );
+  background: linear-gradient(to right,
+      var(--neon-blue),
+      var(--persian-blue),
+      var(--violet-blue),
+      var(--black));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: var(--size) var(--size);
@@ -136,11 +144,9 @@ h4 {
 }
 
 .style3 {
-  background: linear-gradient(
-    to right,
-    var(--midnightgreen),
-    var(--caribeancurrent)
-  );
+  background: linear-gradient(to right,
+      var(--midnightgreen),
+      var(--caribeancurrent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: var(--size) var(--size);
@@ -197,7 +203,7 @@ h4 {
   align-items: center;
   justify-content: center;
   background-color: var(--black);
-  color: var(--periwinkle);
+  color: #F0F0FF;
   font-weight: 800;
   font-size: 20px;
   text-decoration: none !important;
@@ -447,7 +453,7 @@ nav a:focus {
   display: block;
   filter: grayscale(100%);
   border-radius: 50%;
-  margin: 20px auto;
+  margin: auto;
 }
 
 .hero-section span {
@@ -515,6 +521,16 @@ nav a:focus {
   line-height: 1.7;
 }
 
+.aboutmebuttons {
+  display: flex;
+  /* Use Flexbox for alignment */
+  justify-content: flex-end;
+  /* Align content to the right */
+  padding-right: 20px;
+  /* Adds space between content and the right edge */
+  padding-top: 20px;
+}
+
 @media (min-width: 768px) {
   .container.gif {
     display: flex;
@@ -534,7 +550,7 @@ nav a:focus {
   }
 
   #gif {
-    max-width: 430px;
+    max-width: 520px;
     height: auto;
   }
 }
@@ -805,9 +821,6 @@ main {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.h2-test {
-  text-align: center;
-}
 
 .contents-wraper .testRow {
   width: 100%;
@@ -1448,10 +1461,6 @@ div.scrollmenu a {
   border-radius: 20px;
 }
 
-.container.law p {
-  padding: 20px;
-}
-
 .marketing {
   border: 2px solid white;
   border-radius: 20px;
@@ -1644,23 +1653,15 @@ footer {
   /* Optional: Adds space between iframes */
 }
 
-.profilepic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60%;
-  padding-right: 24px;
-}
-
-
 /* about me page */
 .beatriz-img {
-  max-width: 150px;
+  max-width: 210px;
   height: auto;
   border-radius: 20px;
   display: block;
   margin: auto;
   object-fit: contain;
+  padding-right: 6px;
 }
 
 /* animation about me */
@@ -1800,14 +1801,15 @@ Medium devices (640px and larger)
 
   /* Column About me */
   .col-md-4 {
-    width: 33.33%;
+    width: 40%;
+    flex: 1;
   }
 
   .col-md-8 {
-    width: 66.66%;
+    width: 60%;
     align-items: center;
-    /* Vertically align to the middle */
     justify-content: center;
+    flex: 2;
   }
 
   [class*="col-"] {
@@ -1842,15 +1844,10 @@ Medium devices (640px and larger)
   /* About me page */
   .container.about-story {
     display: flex;
-    align-items: stretch;
   }
 
   .about-button {
     font-size: 18px;
-  }
-
-  .beatriz-img {
-    max-width: 210px;
   }
 
   .market {
