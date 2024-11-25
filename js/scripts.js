@@ -98,6 +98,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 // fin del código testimonio// 
+
 // Table of contents
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -116,4 +117,3 @@ function openCity(evt, cityName) {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
   
-// other table/ 

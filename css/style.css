@@ -2138,61 +2138,55 @@ Extra-large devices (1920px or larger)
   animation: stripes 1s linear infinite;
 }
 
-/* Style the tab */
-.tab-germanpro {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
+/* User Research */
 
-/* Style the buttons inside the tab */
-.tab-germanpro button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
+.accordion-germanpro {
+  background-color: #eee;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-bottom: 5px; /* Add spacing between buttons */
 }
 
-/* Change background color of buttons on hover */
-.tab-germanpro button:hover {
-  background-color: #ddd;
+/* Styles for active button and hover */
+.active, .accordion-germanpro:hover {
+  background-color: #ccc; 
 }
 
-/* Create an active/current tablink class */
-.tab-germanpro button.active {
+/* Panel styles */
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.accordion-germanpro:first-of-type {
   background-color: #ccc;
 }
 
-/* Style the tab content */
-.tabcontent-germanpro {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  position: relative; /* For positioning the arrow */
+.accordion-germanpro:first-of-type + .panel {
+  display: block; /* Show the first panel by default */
 }
 
-/* Style for the arrow button */
-.arrow-next {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  color: #000;
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .accordion-germanpro {
+    padding: 15px; /* Reduce padding for mobile */
+  }
 }
 
-.arrow-next:hover {
-  color: #007bff;
+@media screen and (max-width: 400px) {
+  .accordion-germanpro {
+    padding: 12px; /* Reduce padding further */
+  }
 }
 
-/* Style the tab */
 .finding {
   align-items: center;
   background-color: #fff;
@@ -2245,19 +2239,22 @@ Extra-large devices (1920px or larger)
 .participants-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px; /* Space between the items */
+  gap: 20px;
+  /* Space between the items */
   padding: 20px;
 }
 
 @media (max-width: 768px) {
   .participants-grid {
-    grid-template-columns: 1fr 1fr; /* 2 columns for smaller screens (tablets) */
+    grid-template-columns: 1fr 1fr;
+    /* 2 columns for smaller screens (tablets) */
   }
 }
 
 @media (max-width: 480px) {
   .participants-grid {
-    grid-template-columns: 1fr; /* 1 column for very small screens (mobile) */
+    grid-template-columns: 1fr;
+    /* 1 column for very small screens (mobile) */
   }
 }
 
@@ -2273,7 +2270,6 @@ Extra-large devices (1920px or larger)
 }
 
 div.scroll-container {
-  background-color: #333;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
@@ -2281,13 +2277,18 @@ div.scroll-container {
 
 div.scroll-container div {
   display: inline-block;
-  width: 600px;  /* Ancho de cada bloque */
-  height: 400px; /* Altura de cada bloque */
-  margin-right: 10px; /* Espaciado entre bloques */
+  width: 600px;
+  /* Ancho de cada bloque */
+  height: 400px;
+  /* Altura de cada bloque */
+  margin-right: 10px;
+  /* Espaciado entre bloques */
   background-color: #f2f2f2;
   color: #333;
   text-align: center;
-  line-height: 400px; /* Centra el texto verticalmente */
+  line-height: 400px;
+  /* Centra el texto verticalmente */
   font-size: 24px;
   font-weight: bold;
 }
+
